@@ -72,7 +72,7 @@ describe('Popover', () => {
 
   it('should work with different placement', async () => {
     const wrapper = mount(
-      <Popover content="test" placement="topEnd">
+      <Popover content="test" placement="top-end">
         <div />
       </Popover>,
     )
