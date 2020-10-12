@@ -1,9 +1,6 @@
 export const tuple = <T extends string[]>(...args: T) => args
 //todo better syntax related to tuple?
 export const variantsTuple = <T extends ('solid' | 'line' | 'text')[]>(...args: T) => args
-export const statusTuple = <T extends ('default' | 'hover' | 'active' | 'disabled')[]>(
-  ...args: T
-) => args
 
 const buttonVariants = variantsTuple('solid', 'line', 'text')
 
@@ -14,10 +11,6 @@ const inputVariants = tuple('solid', 'line')
 const buttonColors = tuple('default', 'primary', 'secondary', 'success', 'warning', 'error')
 
 const tagColors = tuple('default', 'primary', 'secondary', 'success', 'warning', 'error')
-
-const buttonStatus = tuple('default', 'hover', 'active', 'disabled')
-
-const tabStatus = statusTuple('default', 'hover', 'active', 'disabled')
 
 const messageColors = tuple('default', 'primary', 'success', 'warning', 'error')
 
@@ -75,10 +68,6 @@ export type ButtonVariants = typeof buttonVariants[number]
 export type TabVarient = typeof tabVariants[number]
 
 export type TagVariants = ButtonVariants
-
-export type ButtonStatus = typeof buttonStatus[number]
-
-export type TabStatus = typeof tabStatus[number]
 
 export type MessageColors = typeof messageColors[number]
 
