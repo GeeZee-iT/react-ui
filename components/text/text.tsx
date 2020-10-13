@@ -118,7 +118,7 @@ const Text: React.FC<React.PropsWithChildren<TextProps>> = ({
   }, [renderableChildElements, children, size])
 
   return (
-    <TextChild className={className} tag={tag} size={size} {...props}>
+    <TextChild className={`text ${className}`} tag={tag} size={size} {...props}>
       {modifers}
     </TextChild>
   )
