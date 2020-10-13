@@ -40,7 +40,6 @@ describe('Popover', () => {
     wrapper.find('.tooltip').simulate('click', nativeEvent)
     await updateWrapper(wrapper, 350)
     expectPopoverIsShow(wrapper)
-    expect(wrapper.html()).toMatchSnapshot()
 
     const testNode = wrapper.find('#test')
     expect(testNode.length).not.toBe(0)
@@ -56,7 +55,6 @@ describe('Popover', () => {
     wrapper.find('.tooltip').simulate('click', nativeEvent)
     await updateWrapper(wrapper, 350)
     expect(wrapper.find('.popover .title .item.title').length).toEqual(1)
-    expect(wrapper.html()).toMatchSnapshot()
   })
 
   it('should work with different triggers', async () => {
@@ -79,7 +77,6 @@ describe('Popover', () => {
     wrapper.find('.tooltip').simulate('click', nativeEvent)
     await updateWrapper(wrapper, 350)
     expectPopoverIsShow(wrapper)
-    expect(wrapper.html()).toMatchSnapshot()
     expect(() => wrapper.unmount()).not.toThrow()
   })
 

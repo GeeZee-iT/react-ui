@@ -5,7 +5,7 @@ import { Placement, TriggerTypes, SnippetColors } from '../utils/prop-types'
 import PopoverItem from '../popover/popover-item'
 import { getReactNode } from '../utils/collections'
 
-interface Props extends Omit<TooltipProps, keyof Props> {
+export interface Props extends Omit<TooltipProps, 'title' | 'content' | 'text'> {
   title?: React.ReactNode | (() => React.ReactNode)
   notSeperateTitle?: boolean
   content?: React.ReactNode | (() => React.ReactNode)
@@ -13,28 +13,19 @@ interface Props extends Omit<TooltipProps, keyof Props> {
 
 export const defaultProps = Object.assign({}, tooltipDefaultProps, {
   notSeperateTitle: false,
-  contentClassName: '',
   trigger: 'click' as TriggerTypes,
   placement: 'bottom' as Placement,
   color: 'lite' as SnippetColors,
 })
 
-interface TextProps {
+export interface TextProps {
   title?: React.ReactNode | (() => React.ReactNode)
   titleNode: React.ReactNode | (() => React.ReactNode)
   line: boolean
   text: React.ReactNode
 }
 
-type NativeAttrs = Omit<React.HTMLAttributes<any>, keyof Props>
-export type PopoverProps = Omit<Props, 'text'> & NativeAttrs
-
-const PopoverText: React.FC<React.PropsWithChildren<TextProps>> = ({
-  title,
-  titleNode,
-  line,
-  text,
-}) => {
+const PopoverText: React.FC<TextProps> = ({ title, titleNode, line, text }) => {
   const theme = useTheme()
 
   return (
@@ -69,12 +60,13 @@ const PopoverText: React.FC<React.PropsWithChildren<TextProps>> = ({
   )
 }
 
-const Popover: React.FC<React.PropsWithChildren<PopoverProps>> = ({
+export type PopoverProps = React.PropsWithChildren<Props>
+const Popover: React.FC<PopoverProps> = ({
   title,
   notSeperateTitle,
   content,
   children,
-  contentClassName,
+  className,
   ...props
 }: PopoverProps & typeof defaultProps) => {
   const theme = useTheme()
@@ -83,7 +75,7 @@ const Popover: React.FC<React.PropsWithChildren<PopoverProps>> = ({
 
   return (
     <Tooltip
-      contentClassName={`popover ${contentClassName}`}
+      className={`popover ${className}`}
       {...{
         ...props,
         text: (

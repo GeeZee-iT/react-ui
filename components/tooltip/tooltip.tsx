@@ -23,12 +23,12 @@ export const defaultProps = {
   placement: 'auto' as Placement,
   // enterDelay: 100,
   // leaveDelay: 200,
-  offset: [0, 10],
+  offset: [0, 10] as Options['offset'],
   className: '',
   contentClassName: '',
 }
 
-export interface Props extends Omit<React.HTMLAttributes<any>, keyof Props> {
+export interface Props extends Omit<React.HTMLAttributes<any>, 'onMouseEnter' | 'onMouseLeave'> {
   text: string | React.ReactNode
   color?: SnippetColors
   placement?: Placement
@@ -39,7 +39,6 @@ export interface Props extends Omit<React.HTMLAttributes<any>, keyof Props> {
   // enterDelay?: number
   // leaveDelay?: number
   offset?: Options['offset']
-  className?: string
   contentClassName?: string
   onVisibleChange?: TooltipOnVisibleChange
   onMouseEnter?: EventHandlerWithChangeVisible
@@ -47,6 +46,7 @@ export interface Props extends Omit<React.HTMLAttributes<any>, keyof Props> {
   // onClick?: EventHandlerWithChangeVisible
   onClickAway?: (event: Event, setVisible: (nextState: boolean) => void) => void
 }
+
 export type TooltipProps = React.PropsWithChildren<Props>
 
 const Tooltip: React.FC<TooltipProps> = ({
@@ -87,7 +87,7 @@ const Tooltip: React.FC<TooltipProps> = ({
       {
         name: 'offset',
         options: {
-          offset: [0, 10],
+          offset,
         },
       },
     ],
