@@ -207,6 +207,7 @@ export const meta = {
 | **placement**            | 提示框与目标的对齐方式                                         | [Placement](#placement)                              | -                                | `top`     |
 | **trigger**              | 触发提示框的方式                                               | `'click' / 'hover'`                                  | -                                | `hover`   |
 | **hoverable**            | 使 tooltip 的内容可以 hover, 只在 `trigger==='hover'` 有效     | `boolean`                                            | -                                | `false`   |
+| **displayBlock**         | 在 tooltip wrapper 上增加 `display: 'block'` 样式              | `boolean`                                            | -                                | `false`   |
 | **hoverableTimeout**(ms) | 当 `hoverable` 为 `true` 时, 会在该时间后再删除 tooltip 的内容 | `number`                                             | -                                | `200`     |
 | **offset**(px)           | Skidding 和 Distance                                           | 参考 https://popper.js.org/docs/v2/modifiers/offset/ | -                                | `[0,10]`  |
 | **contentClassName**     | 弹出框的类名                                                   | `string`                                             | -                                | -         |

@@ -25,9 +25,11 @@ export const defaultProps = {
   contentClassName: '',
   hoverable: false,
   hoverableTimeout: 200,
+  displayBlock: false,
 }
 
 export interface Props extends Omit<React.HTMLAttributes<any>, 'onMouseEnter' | 'onMouseLeave'> {
+  displayBlock?: boolean
   hoverable?: boolean
   hoverableTimeout?: number
   text: string | React.ReactNode
@@ -49,6 +51,7 @@ export interface Props extends Omit<React.HTMLAttributes<any>, 'onMouseEnter' | 
 export type TooltipProps = React.PropsWithChildren<Props>
 
 const Tooltip: React.FC<TooltipProps> = ({
+  displayBlock,
   hoverable,
   hoverableTimeout,
   children,
@@ -136,7 +139,7 @@ const Tooltip: React.FC<TooltipProps> = ({
   }, [customVisible])
 
   return (
-    <div>
+    <div className="tooltip-wrapper">
       <div
         className={`tooltip ${className}`}
         ref={parentRef}
@@ -165,6 +168,10 @@ const Tooltip: React.FC<TooltipProps> = ({
         </div>
       )}
       <style jsx>{`
+        .tooltip-wrapper {
+          display: ${displayBlock ? 'block' : 'inline-block'};
+        }
+
         .tooltip {
           display: inline-block;
         }
