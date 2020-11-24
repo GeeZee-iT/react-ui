@@ -95,6 +95,7 @@ const Pagination = forwardRef<PaginationHandles, React.PropsWithChildren<Paginat
     }: PaginationProps & typeof defaultProps,
     ref: RefObject<PaginationHandles>,
   ) => {
+    const isSolid = variant === 'solid'
     const theme = useTheme()
     const customSize = simple ? 'small' : size
     const [page, setPage] = useMergedState(defaultPage, {
@@ -169,7 +170,7 @@ const Pagination = forwardRef<PaginationHandles, React.PropsWithChildren<Paginat
     )
     return (
       <PaginationContext.Provider value={values}>
-        <div className={`pagination ${className} ${variant || 'line'}`}>
+        <div className={`pagination ${className} ${isSolid ? 'solid' : 'line'}`}>
           {showPageSizeChanger && (
             <div className="left">
               <PaginationPageSize

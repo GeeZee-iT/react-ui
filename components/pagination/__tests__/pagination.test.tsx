@@ -24,6 +24,12 @@ describe('Pagination', () => {
     expect(() => wrapper.unmount()).not.toThrow()
   })
 
+  it('should render correctly', () => {
+    const wrapper = mount(<Pagination total={50} variant="solid" />)
+    expect(wrapper.html()).toMatchSnapshot()
+    expect(() => wrapper.unmount()).not.toThrow()
+  })
+
   it('should set pageSize', () => {
     const wrapper = mount(<Pagination total={50} pageSize={12} />)
     expect(wrapper.html()).toMatchSnapshot()
@@ -234,7 +240,7 @@ describe('Pagination', () => {
     await updateWrapper(wrapper, 200)
     let input = wrapper.find('input').getDOMNode() as HTMLInputElement
     input.value = 'test'
-    wrapper.find('input').at(0).simulate('blur', nativeEvent)
+    wrapper.find('input').at(0).simulate('keyPress', { key: 'Enter' })
     // expect(onChangehandler).toHaveBeenCalled()
     expect(current).toEqual(3)
     expect(input.value).toEqual('')
@@ -249,20 +255,35 @@ describe('Pagination', () => {
     await updateWrapper(wrapper, 200)
     let input = wrapper.find('input').getDOMNode() as HTMLInputElement
     input.value = ''
-    wrapper.find('input').at(0).simulate('blur', nativeEvent)
+    wrapper.find('input').at(0).simulate('keyPress', { key: 'Enter' })
     expect(current).toEqual(3)
     expect(input.value).toEqual('')
   })
 
-  it('should trigger change event when you type a page number', async () => {
+  it('should trigger enterpress event when you type a page number', async () => {
     let current = ''
     const handler = jest.fn().mockImplementation(val => (current = val))
     const wrapper = mount(<Pagination total={200} onPageChange={handler} showQuickJumper />)
     let input = wrapper.find('input').getDOMNode() as HTMLInputElement
     input.value = '5'
-    wrapper.find('input').at(0).simulate('blur', nativeEvent)
+    wrapper.find('input').at(0).simulate('keyPress', { key: 'Enter' })
     expect(handler).toHaveBeenCalled()
     expect(current).toEqual(5)
+  })
+
+  it('should no change when you type a event except for enterpress', async () => {
+    let current = 3
+    const onChangehandler = jest.fn().mockImplementation(val => (current = val))
+    const wrapper = mount(
+      <Pagination defaultPage={2} total={200} onPageChange={onChangehandler} showQuickJumper />,
+    )
+    await updateWrapper(wrapper, 200)
+    let input = wrapper.find('input').getDOMNode() as HTMLInputElement
+    input.value = '5'
+    wrapper.find('input').at(0).simulate('keyPress', { key: 'Shift' })
+    // expect(onChangehandler).toHaveBeenCalled()
+    expect(current).toEqual(3)
+    expect(input.value).toEqual('5')
   })
 
   it('should set the page to max page  when you type a page  greater than the max page', async () => {
@@ -273,7 +294,7 @@ describe('Pagination', () => {
     )
     let input = wrapper.find('input').getDOMNode() as HTMLInputElement
     input.value = '21'
-    wrapper.find('input').at(0).simulate('blur', nativeEvent)
+    wrapper.find('input').at(0).simulate('keyPress', { key: 'Enter' })
     expect(handler).toHaveBeenCalled()
     expect(current).toEqual(20)
   })
