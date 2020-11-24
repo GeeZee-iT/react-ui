@@ -27,7 +27,6 @@ const PaginationNext: React.FC<PaginationQuickJumperProps> = ({
   const { variant, updatePage, simple } = usePaginationContext()
   const keyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     const target = e.target as HTMLTextAreaElement
-    console.log(e.key)
     if (e.key == 'Enter') {
       let val = Number(target.value)
       if (val && Number.isInteger(val)) {
