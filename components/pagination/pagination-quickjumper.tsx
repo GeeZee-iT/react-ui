@@ -25,23 +25,24 @@ const PaginationNext: React.FC<PaginationQuickJumperProps> = ({
   const theme = useTheme()
   const inputRef = useRef<HTMLInputElement>(null)
   const { variant, updatePage, simple } = usePaginationContext()
-  const blurHandler = (e: React.FocusEvent<HTMLInputElement>) => {
-    if (e.target.value) {
-      let val = Number(e.target.value)
-      if (Number.isInteger(val)) {
+  const keyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    const target = e.target as HTMLTextAreaElement
+    if (e.key == 'Enter') {
+      let val = Number(target.value)
+      if (val && Number.isInteger(val)) {
         if (val > count) {
           val = count
         }
         updatePage && updatePage('click', val)
       }
+      inputRef.current && (inputRef.current.value = '')
     }
-    inputRef.current && (inputRef.current.value = '')
   }
   return (
     <div className="pagination-quickjumper">
       <div className="text before">{labelJumperBefore}</div>
       <Input
-        onBlur={blurHandler}
+        onKeyPress={keyPress}
         variant={variant}
         width={simple ? '4rem' : '4.7143rem'}
         size={size}
