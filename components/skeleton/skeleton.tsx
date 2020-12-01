@@ -88,6 +88,9 @@ export const Skeleton: React.FC<SkeletonProps> = ({
             height: 1.5714rem;
             transform-style: preserve-3d;
           }
+          .skeleton::after {
+            border-left: 1px solid #EFF2FA;
+          }
           .skeleton.text {
             margin-top: 0;
             margin-bottom: 0;

@@ -17,6 +17,7 @@ import PickerTag from '../picker-tag'
 import generateSinglePicker from './generate-single-picker'
 import generateRangePicker from './generate-range-picker'
 import { InputColors, InputVariantTypes, NormalSizes } from '../../utils/prop-types'
+import useDatePickerHandle from './../use-date-picker-handle'
 
 export const Components = { button: PickerButton, rangeItem: PickerTag }
 
@@ -143,6 +144,7 @@ function generatePicker<DateType>(generateConfig: GenerateConfig<DateType>) {
     RangePicker: React.FC<RangePickerProps<DateType>>
     TimePicker: typeof TimePicker
     QuarterPicker: typeof QuarterPicker
+    useDatePickerHandle: typeof useDatePickerHandle
   }
 
   const MergedDatePicker = DatePicker as MergedDatePicker
@@ -152,6 +154,7 @@ function generatePicker<DateType>(generateConfig: GenerateConfig<DateType>) {
   MergedDatePicker.RangePicker = RangePicker as React.FC<RangePickerProps<DateType>>
   MergedDatePicker.TimePicker = TimePicker
   MergedDatePicker.QuarterPicker = QuarterPicker
+  MergedDatePicker.useDatePickerHandle = useDatePickerHandle
 
   return MergedDatePicker
 }
