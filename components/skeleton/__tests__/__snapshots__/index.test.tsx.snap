@@ -30,6 +30,9 @@ exports[`Skeleton should render all variant correctly 1`] = `
             height: 1.5714rem;
             transform-style: preserve-3d;
           }
+          .skeleton::after {
+            border-left: 1px solid #EFF2FA;
+          }
           .skeleton.text {
             margin-top: 0;
             margin-bottom: 0;
@@ -101,6 +104,9 @@ exports[`Skeleton should render all variant correctly 2`] = `
             background-color: #EFF2FA;
             height: 1.5714rem;
             transform-style: preserve-3d;
+          }
+          .skeleton::after {
+            border-left: 1px solid #EFF2FA;
           }
           .skeleton.text {
             margin-top: 0;
@@ -174,6 +180,9 @@ exports[`Skeleton should render correctly 1`] = `
             height: 1.5714rem;
             transform-style: preserve-3d;
           }
+          .skeleton::after {
+            border-left: 1px solid #EFF2FA;
+          }
           .skeleton.text {
             margin-top: 0;
             margin-bottom: 0;
@@ -245,6 +254,9 @@ exports[`Skeleton should render correctly width custom with and height 1`] = `
             background-color: #EFF2FA;
             height: 1.5714rem;
             transform-style: preserve-3d;
+          }
+          .skeleton::after {
+            border-left: 1px solid #EFF2FA;
           }
           .skeleton.text {
             margin-top: 0;
@@ -318,6 +330,9 @@ exports[`Skeleton should render correctly width custom with and height 2`] = `
             height: 1.5714rem;
             transform-style: preserve-3d;
           }
+          .skeleton::after {
+            border-left: 1px solid #EFF2FA;
+          }
           .skeleton.text {
             margin-top: 0;
             margin-bottom: 0;
@@ -389,6 +404,9 @@ exports[`Skeleton should render correctly width custom with and height 3`] = `
             background-color: #EFF2FA;
             height: 1.5714rem;
             transform-style: preserve-3d;
+          }
+          .skeleton::after {
+            border-left: 1px solid #EFF2FA;
           }
           .skeleton.text {
             margin-top: 0;
@@ -547,6 +565,9 @@ exports[`Skeleton should render correctly with children 1`] = `
             background-color: #EFF2FA;
             height: 1.5714rem;
             transform-style: preserve-3d;
+          }
+          .skeleton::after {
+            border-left: 1px solid #EFF2FA;
           }
           .skeleton.text {
             margin-top: 0;
