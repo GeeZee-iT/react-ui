@@ -17,7 +17,10 @@ export type RangePickerProps = BaseRangePickerProps<Dayjs>
 //      It's acceptable now, but the experience is not excellent.
 //      Think about `<input type="date/time" />`
 
-export const DatePicker = generatePicker<Dayjs>(generateConfig)
+const DatePicker = generatePicker<Dayjs>(generateConfig)
+DatePicker.useDatePickerHandle = useDatePickerHandle
+
+export { DatePicker }
 
 export default DatePicker
 

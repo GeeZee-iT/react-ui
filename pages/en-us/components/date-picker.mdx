@@ -2,7 +2,6 @@ import dayjs from 'dayjs'
 import { useState } from 'react'
 import { Layout, Playground, Attributes } from 'lib/components'
 import { Link, Text, Code, Spacer, DatePicker, Divider, Button } from 'components'
-import { useDatePickerHandle } from 'components/date-picker'
 import NextLink from 'next/link'
 
 export const meta = {
@@ -685,12 +684,12 @@ Select or input a date or time.
 <Playground
   title="With `UseDatePickerHandle`"
   desc="Use `hooks` to capture changes."
-  scope={{ DatePicker, Spacer, Button, dayjs, Divider, useDatePickerHandle }}
+  scope={{ DatePicker, Spacer, Button, dayjs, Divider }}
   code={`
 () => {
   const { RangePicker } = DatePicker
-  const { ref, setValue, getValue, focus, blur } = useDatePickerHandle()
-  const { ref: ref2, setValue: setValue2, getValue: getValue2, focus: focus2, blur: blur2 } = useDatePickerHandle()
+  const { ref, setValue, getValue, focus, blur } = DatePicker.useDatePickerHandle()
+  const { ref: ref2, setValue: setValue2, getValue: getValue2, focus: focus2, blur: blur2 } = DatePicker.useDatePickerHandle()
   const setChange = () => {
     console.log(ref)
     setValue(dayjs())
