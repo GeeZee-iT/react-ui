@@ -1,19 +1,28 @@
 import { MutableRefObject, useEffect } from 'react'
 
-const useClickAway = (
-  ref: MutableRefObject<HTMLElement | null>,
-  handler: (event: Event) => void,
-) => {
+type RefObject = MutableRefObject<HTMLElement | null>
+
+const useClickAway = (refs: RefObject | Array<RefObject>, handler: (event: Event) => void) => {
   useEffect(() => {
     const callback = (event: Event) => {
-      const el = ref.current
-      if (!event || !el || el.contains((event as any).target)) return
-      handler(event)
+      let refsArray = Array.isArray(refs) ? refs : [refs]
+      let isAway = true
+      while (refsArray.length) {
+        const el = refsArray[0].current
+        if (!event || !el || el.contains((event as any).target)) {
+          isAway = false
+          refsArray = []
+        }
+        refsArray.shift()
+      }
+      if (isAway) {
+        handler(event)
+      }
     }
 
     document.addEventListener('click', callback)
     return () => document.removeEventListener('click', callback)
-  }, [ref, handler])
+  }, [refs, handler])
 }
 
 export default useClickAway
