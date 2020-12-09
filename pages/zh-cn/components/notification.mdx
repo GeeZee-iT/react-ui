@@ -115,16 +115,16 @@ export const meta = {
 <Attributes edit="/pages/zh-cn/components/notification.mdx">
 <Attributes.Title>useNotifications</Attributes.Title>
 
-| 属性          | 描述                       | 类型                   | 推荐值                   | 默认          |
-| ------------- | -------------------------- | ---------------------- | ------------------------ | ------------- |
-| **icon**      | 通知左侧图标               | `React.ReactNode`      | -                        | `<Bell/>`     |
-| **title**     | 通知的标题                 | `React.ReactNode`      | -                        | -             |
-| **content**   | 通知的内容                 | `React.ReactNode`      | -                        | -             |
-| **delay**     | 通知关闭的延迟时间（毫秒） | `number`               | -                        | `3000`        |
-| **closeable** | 是否手动关闭               | `boolean`              | -                        | `false`       |
-| **placement** | 提示框与窗口的对齐方式     | `string`               | -                        | `right-start` |
-| **className** | 自定义样式                 | `string`               | -                        | -             |
-| ...           | 原生属性                   | `ButtonHTMLAttributes` | `'id', 'className', ...` | -             |
+| 属性          | 描述                       | 类型                    | 推荐值                                          | 默认          |
+| ------------- | -------------------------- | ----------------------- | ----------------------------------------------- | ------------- |
+| **icon**      | 通知左侧图标               | `React.ReactNode`       | -                                               | `<Bell/>`     |
+| **title**     | 通知的标题                 | `React.ReactNode`       | -                                               | -             |
+| **content**   | 通知的内容                 | `React.ReactNode`       | -                                               | -             |
+| **delay**     | 通知关闭的延迟时间（毫秒） | `number`                | -                                               | `3000`        |
+| **closeable** | 是否手动关闭               | `boolean`               | -                                               | `false`       |
+| **placement** | 提示框与窗口的对齐方式     | `NotificationPlacement` | [NotificationPlacement](#notificationPlacement) | `right-start` |
+| **className** | 自定义样式                 | `string`                | -                                               | -             |
+| ...           | 原生属性                   | `ButtonHTMLAttributes`  | `'id', 'className', ...`                        | -             |
 
 <Attributes.Title>NotificationPlacement</Attributes.Title>
 
@@ -142,7 +142,7 @@ interface Notification {
   delay?: number
   closeable?: boolean
   className?: string
-  placement?: string
+  placement?: NotificationPlacement
   onClose?: Function
 }
 ```

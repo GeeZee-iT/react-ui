@@ -115,16 +115,16 @@ Display an important notification globally.
 <Attributes edit="/pages/zh-cn/components/notification.mdx">
 <Attributes.Title>useNotifications</Attributes.Title>
 
-| Attribute     | Description                                      | Type                   | Accepted values          | Default       |
-| ------------- | ------------------------------------------------ | ---------------------- | ------------------------ | ------------- |
-| **icon**      | notification icon                                | `React.ReactNode`      | -                        | `<Bell/>`     |
-| **title**     | notification title                               | `React.ReactNode`      | -                        | -             |
-| **content**   | notification content                             | `React.ReactNode`      | -                        | -             |
-| **delay**     | notification auto close delay time (millisecond) | `number`               | -                        | `3000`        |
-| **closeable** | auto close or not                                | `boolean`              | -                        | `false`       |
-| **placement** | position of the popover relative to the window   | `string`               | -                        | `right-start` |
-| **className** | custom css style                                 | `string`               | -                        | -             |
-| ...           | native props                                     | `ButtonHTMLAttributes` | `'id', 'className', ...` | -             |
+| Attribute     | Description                                      | Type                    | Accepted values                                 | Default       |
+| ------------- | ------------------------------------------------ | ----------------------- | ----------------------------------------------- | ------------- |
+| **icon**      | notification icon                                | `React.ReactNode`       | -                                               | `<Bell/>`     |
+| **title**     | notification title                               | `React.ReactNode`       | -                                               | -             |
+| **content**   | notification content                             | `React.ReactNode`       | -                                               | -             |
+| **delay**     | notification auto close delay time (millisecond) | `number`                | -                                               | `3000`        |
+| **closeable** | auto close or not                                | `boolean`               | -                                               | `false`       |
+| **placement** | position of the popover relative to the window   | `NotificationPlacement` | [NotificationPlacement](#notificationPlacement) | `right-start` |
+| **className** | custom css style                                 | `string`                | -                                               | -             |
+| ...           | native props                                     | `ButtonHTMLAttributes`  | `'id', 'className', ...`                        | -             |
 
 <Attributes.Title>NotificationPlacement</Attributes.Title>
 
@@ -141,7 +141,7 @@ interface Notification {
   content: React.ReactNode
   delay?: number
   closeable?: boolean
-  placement?: string
+  placement?: NotificationPlacement
   className?: string
   onClose?: Function
 }
