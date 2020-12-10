@@ -24,7 +24,7 @@ const InputPassword = React.forwardRef<
   const [visible, setVisible] = useState<boolean>(false)
   useImperativeHandle(ref, () => inputRef.current)
 
-  const iconClickHandler = () => {
+  const iconRightClickHandler = () => {
     setVisible(v => !v)
     /* istanbul ignore next */
     if (inputRef && inputRef.current) {
@@ -36,11 +36,11 @@ const InputPassword = React.forwardRef<
     () => ({
       ...props,
       ref: inputRef,
-      iconClickable: true,
-      onIconClick: iconClickHandler,
+      iconRightClickable: true,
+      onIconRightClick: iconRightClickHandler,
       type: visible ? 'text' : 'password',
     }),
-    [props, iconClickHandler, visible, inputRef],
+    [props, iconRightClickHandler, visible, inputRef],
   )
   const icon = useMemo(() => {
     if (hideToggle) return null
