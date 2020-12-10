@@ -14,6 +14,10 @@ const tagColors = tuple('default', 'primary', 'secondary', 'success', 'warning',
 
 const messageColors = tuple('default', 'primary', 'success', 'warning', 'error')
 
+const notificationColors = tuple('default', 'primary', 'success', 'warning', 'error')
+
+const notificationPlacement = tuple('right-start', 'left-start')
+
 const selectVariants = tuple('line', 'text')
 
 const normalSizes = tuple('mini', 'small', 'medium', 'large')
@@ -73,6 +77,10 @@ export type TabVariant = typeof tabVariants[number]
 export type TagVariants = ButtonVariants
 
 export type MessageColors = typeof messageColors[number]
+
+export type NotificationColors = typeof notificationColors[number]
+
+export type NotificationPlacement = typeof notificationPlacement[number]
 
 export type NormalSizes = typeof normalSizes[number]
 

@@ -1,0 +1,152 @@
+import { Layout, Playground, Attributes } from 'lib/components'
+import { useNotifications, Button, Spacer, Code } from 'components'
+import * as Icon from '@zeit-ui/react-icons'
+
+export const meta = {
+  title: 'Notification',
+  group: 'Feedback',
+}
+
+## Notification
+
+Display an important notification globally.
+
+<Playground
+  desc="Basic usage"
+  scope={{ Button, useNotifications }}
+  code={`
+    () => {
+      const [notifications, setNotification] = useNotifications()
+      const click = () => setNotification({ 
+        title: 'Notification Title',
+        content: 'Notification Content. Notification Content. Notification Content. '
+      })
+      return <Button onClick={click}>Show Notification</Button>
+    }
+  `}
+/>
+
+<Playground
+  title="Delay"
+  desc="Default delay is 3s. If set to 0s, notification will not hide, stay display always."
+  scope={{ Button, useNotifications }}
+  code={`
+() => {
+  const [, setNotification] = useNotifications()
+  const click = () => setNotification({ 
+    title: 'Notification Title',
+    content: 'Notification Content. Notification Content. Notification Content. ',
+    delay: 10000
+  })
+  return <Button onClick={click}>Show Notification</Button>
+}
+`}
+/>
+
+<Playground
+  title="Closeable"
+  desc="Set props closeable to true, will display close icon and can close manually."
+  scope={{ Button, useNotifications }}
+  code={`
+() => {
+  const [, setNotification] = useNotifications()
+  const click = () => setNotification({ 
+    title: 'Notification Title',
+    content: 'Notification Content. Notification Content. Notification Content. ',
+    delay: 0,
+    closeable: true,
+  })
+  return <Button onClick={click}>Show Notification</Button>
+}
+`}
+/>
+
+<Playground
+  title="Placement"
+  desc="Custom Placement (default is 'right-start')."
+  scope={{ Button, useNotifications, Icon, Spacer }}
+  code={`
+() => {
+  const [, setNotification] = useNotifications()
+  return (
+    <>
+      <Button onClick={() => setNotification({ 
+        title: 'Notification Title',
+        content: 'Notification Content. Notification Content. Notification Content. ',
+      })}>Right Start</Button>
+      <Spacer y={.5} />
+      <Button onClick={() => setNotification({ 
+        title: 'Notification Title',
+        content: 'Notification Content. Notification Content. Notification Content. ',
+        placement: 'left-start'
+      })}>Left Start</Button>
+    </>
+  )
+}
+`}
+/>
+
+<Playground
+  title="Icon"
+  desc="Custom Icon."
+  scope={{ Button, useNotifications, Icon, Spacer }}
+  code={`
+() => {
+  const [, setNotification] = useNotifications()
+  return (
+    <>
+      <Button onClick={() => setNotification({ 
+        icon: <Icon.CheckInCircleFill color="green" />,
+        title: 'Notification Title',
+        content: 'Notification Content. Notification Content. Notification Content. ',
+      })}>Show Success</Button>
+      <Spacer y={.5} />
+      <Button onClick={() => setNotification({ 
+        icon: <Icon.AlertTriangleFill color="orange" />,
+        title: 'Notification Title',
+        content: 'Notification Content. Notification Content. Notification Content. ',
+      })}>Show Warning</Button>
+    </>
+  )
+}
+`}
+/>
+
+<Attributes edit="/pages/zh-cn/components/notification.mdx">
+<Attributes.Title>useNotifications</Attributes.Title>
+
+| Attribute     | Description                                      | Type                    | Accepted values                                 | Default       |
+| ------------- | ------------------------------------------------ | ----------------------- | ----------------------------------------------- | ------------- |
+| **icon**      | notification icon                                | `React.ReactNode`       | -                                               | `<Bell/>`     |
+| **title**     | notification title                               | `React.ReactNode`       | -                                               | -             |
+| **content**   | notification content                             | `React.ReactNode`       | -                                               | -             |
+| **delay**     | notification auto close delay time (millisecond) | `number`                | -                                               | `3000`        |
+| **closeable** | auto close or not                                | `boolean`               | -                                               | `false`       |
+| **placement** | position of the popover relative to the window   | `NotificationPlacement` | [NotificationPlacement](#notificationPlacement) | `right-start` |
+| **className** | custom css style                                 | `string`                | -                                               | -             |
+| ...           | native props                                     | `ButtonHTMLAttributes`  | `'id', 'className', ...`                        | -             |
+
+<Attributes.Title>NotificationPlacement</Attributes.Title>
+
+```ts
+type NotificationPlacement = 'right-start' | 'left-start'
+```
+
+<Attributes.Title>Notification</Attributes.Title>
+
+```ts
+interface Notification {
+  icon?: React.ReactNode
+  title: React.ReactNode
+  content: React.ReactNode
+  delay?: number
+  closeable?: boolean
+  placement?: NotificationPlacement
+  className?: string
+  onClose?: Function
+}
+```
+
+</Attributes>
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>
