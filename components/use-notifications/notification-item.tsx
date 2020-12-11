@@ -21,6 +21,7 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
     const [visible, setVisible] = useState<boolean>(false)
     const [hide, setHide] = useState<boolean>(false)
     const [hover, setHover] = useState<boolean>(false)
+
     useEffect(() => {
       const timer = window.setTimeout(() => {
         setVisible(true)
@@ -80,7 +81,7 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
         )}
         <style jsx>{`
           .notification {
-            max-width: 28rem;
+            width: 28rem;
             background-color: ${bgColor};
             color: ${color};
             border: 0;
@@ -124,7 +125,7 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
             height: 1.4286rem;
             width: 1.4286rem;
             margin-right: calc(${theme.layout.gap} * 0.75);
-            flex-grow: 1;
+            flex-grow: 0;
             flex-shrink: 0;
             color: ${theme.palette.error};
           }
@@ -138,6 +139,7 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
             font-size: 1rem;
             line-height: 1.2857rem;
             line-height: 1.4286rem;
+            margin-right: ${theme.layout.gap};
           }
           .content {
             line-height: 1.2857rem;
@@ -149,12 +151,10 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
             height: 1.2857rem;
             width: 1.2857rem;
             cursor: pointer;
-            margin-left: ${theme.layout.gap};
             color: ${theme.palette.cNeutral4};
-            flex-grow: 1;
-            flex-shrink: 0;
-            margin-right: -0.1429rem;
-            margin-top: -0.1429rem;
+            position: absolute;
+            right: 1.1429rem;
+            top: 1.1429rem;
           }
           .close > :global(svg) {
             width: 100%;
