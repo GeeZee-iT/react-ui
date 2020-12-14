@@ -1,8 +1,8 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import useTheme from '../styles/use-theme'
 import { Notification } from './use-notifications'
-import X from '@zeit-ui/react-icons/x'
-import { getStyles } from './styles'
+import Bell from '@zeit-ui/react-icons/bell'
+import ModalIcon from './modal-icon'
 
 export type NotificationItemProps = Notification & {
   id: string
@@ -13,14 +13,11 @@ const transitionDuration = 150
 const NotificationItem: React.FC<NotificationItemProps> = React.memo(
   ({ className, id, title, content, placement, delay, destroy, onClose, closeable, ...rest }) => {
     const theme = useTheme()
-    const { color, bgColor, icon } = useMemo(() => getStyles(theme.palette, rest.color), [
-      theme.palette,
-      rest.color,
-    ])
     let boxShadow: string = theme.expressiveness.D2
     const [visible, setVisible] = useState<boolean>(false)
     const [hide, setHide] = useState<boolean>(false)
     const [hover, setHover] = useState<boolean>(false)
+
     useEffect(() => {
       const timer = window.setTimeout(() => {
         setVisible(true)
@@ -65,24 +62,19 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
         key={id}
         className={`notification ${className} ${visible ? 'visible' : ''} ${
           hide ? 'hide' : ''
-        } ${placement}`}
+        } ${placement} ${rest.color}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}>
-        <div className="icon">{rest.icon || icon}</div>
+        <div className="icon">{rest.icon || <Bell />}</div>
         <div>
           <div className="title">{title}</div>
           {content !== '' && <div className="content">{content}</div>}
         </div>
-        {closeable && (
-          <div className="close" onClick={handleClose}>
-            <X />
-          </div>
-        )}
+        {closeable && <ModalIcon size={16} color={theme.palette.cNeutral5} onClick={handleClose} />}
         <style jsx>{`
           .notification {
-            max-width: 28rem;
-            background-color: ${bgColor};
-            color: ${color};
+            width: 28rem;
+            background-color: ${theme.palette.cNeutral8};
             border: 0;
             border-radius: ${theme.expressiveness.R2};
             padding: ${theme.layout.gap};
@@ -124,9 +116,9 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
             height: 1.4286rem;
             width: 1.4286rem;
             margin-right: calc(${theme.layout.gap} * 0.75);
-            flex-grow: 1;
+            flex-grow: 0;
             flex-shrink: 0;
-            color: ${theme.palette.error};
+            color: ${theme.palette.cNeutral7};
           }
           .icon > :global(svg) {
             width: 100%;
@@ -138,27 +130,14 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
             font-size: 1rem;
             line-height: 1.2857rem;
             line-height: 1.4286rem;
+            margin-right: ${theme.layout.gap};
+            color: ${theme.palette.cNeutral7};
           }
           .content {
             line-height: 1.2857rem;
             font-size: 1rem;
             color: ${theme.palette.cNeutral4};
             margin-top: calc(${theme.layout.gap} * 0.75);
-          }
-          .close {
-            height: 1.2857rem;
-            width: 1.2857rem;
-            cursor: pointer;
-            margin-left: ${theme.layout.gap};
-            color: ${theme.palette.cNeutral4};
-            flex-grow: 1;
-            flex-shrink: 0;
-            margin-right: -0.1429rem;
-            margin-top: -0.1429rem;
-          }
-          .close > :global(svg) {
-            width: 100%;
-            height: 100%;
           }
         `}</style>
       </div>

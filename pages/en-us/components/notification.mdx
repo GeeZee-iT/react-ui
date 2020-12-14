@@ -96,13 +96,19 @@ Display an important notification globally.
   return (
     <>
       <Button onClick={() => setNotification({ 
+        icon: <Icon.XCircleFill color="red" />,
+        title: 'Notification Title',
+        content: 'Notification Content. Notification Content. Notification Content. ',
+      })}>Show Error</Button>
+      <Spacer y={.5} />
+      <Button onClick={() => setNotification({ 
         icon: <Icon.CheckInCircleFill color="green" />,
         title: 'Notification Title',
         content: 'Notification Content. Notification Content. Notification Content. ',
       })}>Show Success</Button>
       <Spacer y={.5} />
       <Button onClick={() => setNotification({ 
-        icon: <Icon.AlertTriangleFill color="orange" />,
+        icon: <Icon.AlertCircleFill color="orange" />,
         title: 'Notification Title',
         content: 'Notification Content. Notification Content. Notification Content. ',
       })}>Show Warning</Button>

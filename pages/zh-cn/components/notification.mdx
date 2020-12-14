@@ -96,13 +96,19 @@ export const meta = {
   return (
     <>
       <Button onClick={() => setNotification({ 
+        icon: <Icon.XCircleFill color="red" />,
+        title: '标题',
+        content: '你正在浏览文档站点。你正在浏览文档站点。你正在浏览文档站点。',
+      })}>错误</Button>
+      <Spacer y={.5} />
+      <Button onClick={() => setNotification({ 
         icon: <Icon.CheckInCircleFill color="green" />,
         title: '标题',
         content: '你正在浏览文档站点。你正在浏览文档站点。你正在浏览文档站点。',
       })}>成功</Button>
       <Spacer y={.5} />
       <Button onClick={() => setNotification({ 
-        icon: <Icon.AlertTriangleFill color="orange" />,
+        icon: <Icon.AlertCircleFill color="orange" />,
         title: '标题',
         content: '你正在浏览文档站点。你正在浏览文档站点。你正在浏览文档站点。',
       })}>警告</Button>
