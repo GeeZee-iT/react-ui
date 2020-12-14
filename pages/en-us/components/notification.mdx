@@ -27,6 +27,44 @@ Display an important notification globally.
 />
 
 <Playground
+  title="Colors"
+  desc="Different state, include primary, success, warning, error."
+  scope={{ Button, useNotifications, Spacer }}
+  code={`
+() => {
+  const [, setNotifications] = useNotifications()
+  const click = color => setNotifications({
+    title: 'Notification Title',
+    content: 'Notification Content. Notification Content. Notification Content. ',
+    color,
+  })
+  const colors = [
+    ['primary', 'primary'], 
+    ['success', 'success'], 
+    ['warning', 'warning'], 
+    ['error', 'error']
+  ]
+  return (
+    <>
+      {colors.map(c => {
+        return (
+          <div key={c[0]}>
+            <Button 
+              onClick={() => click(c[0])} 
+              variant="solid" 
+              color={c[0]}
+            >{c[1]}</Button>
+            <Spacer y={.5} />
+          </div>
+        )
+      })}
+    </>
+  )
+}
+`}
+/>
+
+<Playground
   title="Delay"
   desc="Default delay is 3s. If set to 0s, notification will not hide, stay display always."
   scope={{ Button, useNotifications }}
@@ -118,6 +156,7 @@ Display an important notification globally.
 | Attribute     | Description                                      | Type                    | Accepted values                                 | Default       |
 | ------------- | ------------------------------------------------ | ----------------------- | ----------------------------------------------- | ------------- |
 | **icon**      | notification icon                                | `React.ReactNode`       | -                                               | `<Bell/>`     |
+| **color**     | notification color                               | `NotificationColors`    | [NotificationColors](#notificationcolors)       | `default`     |
 | **title**     | notification title                               | `React.ReactNode`       | -                                               | -             |
 | **content**   | notification content                             | `React.ReactNode`       | -                                               | -             |
 | **delay**     | notification auto close delay time (millisecond) | `number`                | -                                               | `3000`        |
@@ -125,6 +164,12 @@ Display an important notification globally.
 | **placement** | position of the popover relative to the window   | `NotificationPlacement` | [NotificationPlacement](#notificationPlacement) | `right-start` |
 | **className** | custom css style                                 | `string`                | -                                               | -             |
 | ...           | native props                                     | `ButtonHTMLAttributes`  | `'id', 'className', ...`                        | -             |
+
+<Attributes.Title>NotificationColors</Attributes.Title>
+
+```ts
+type NotificationColors = 'default' | 'primary' | 'success' | 'warning' | 'error'
+```
 
 <Attributes.Title>NotificationPlacement</Attributes.Title>
 

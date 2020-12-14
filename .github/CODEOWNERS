@@ -19,6 +19,7 @@ components/date-picker/* @jnoodle
 components/message/* @chain-txz
 components/button-group/* @chain-txz
 components/skeleton/* @chain-txz
+components/notification/* @chain-txz
 
 
 pages/*/components/input.mdx @yqrashawn
@@ -39,3 +40,4 @@ pages/*/components/date-picker.mdx @jnoodle
 pages/*/components/message.mdx @chain-txz
 pages/*/components/button-group.mdx @chain-txz
 pages/*/components/skeleton.mdx @chain-txz
+pages/*/components/notification.mdx @chain-txz

@@ -66,7 +66,7 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
         key={id}
         className={`notification ${className} ${visible ? 'visible' : ''} ${
           hide ? 'hide' : ''
-        } ${placement}`}
+        } ${placement} ${rest.color}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}>
         <div className="icon">{rest.icon || icon}</div>
@@ -83,7 +83,6 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
           .notification {
             width: 28rem;
             background-color: ${bgColor};
-            color: ${color};
             border: 0;
             border-radius: ${theme.expressiveness.R2};
             padding: ${theme.layout.gap};
@@ -127,7 +126,7 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
             margin-right: calc(${theme.layout.gap} * 0.75);
             flex-grow: 0;
             flex-shrink: 0;
-            color: ${theme.palette.error};
+            color: ${color};
           }
           .icon > :global(svg) {
             width: 100%;
@@ -140,6 +139,7 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
             line-height: 1.2857rem;
             line-height: 1.4286rem;
             margin-right: ${theme.layout.gap};
+            color: ${theme.palette.cNeutral7};
           }
           .content {
             line-height: 1.2857rem;
@@ -151,7 +151,7 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
             height: 1.2857rem;
             width: 1.2857rem;
             cursor: pointer;
-            color: ${theme.palette.cNeutral4};
+            color: ${theme.palette.cNeutral3};
             position: absolute;
             right: 1.1429rem;
             top: 1.1429rem;

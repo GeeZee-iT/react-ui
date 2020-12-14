@@ -5,6 +5,7 @@ import AlertCircleFill from '@zeit-ui/react-icons/alertCircleFill'
 import CheckInCircleFill from '@zeit-ui/react-icons/checkInCircleFill'
 import InfoFill from '@zeit-ui/react-icons/infoFill'
 import XCircleFill from '@zeit-ui/react-icons/xCircleFill'
+import Bell from '@zeit-ui/react-icons/bell'
 
 export interface NotificationColorGroup {
   bgColor: string
@@ -20,26 +21,26 @@ export const getStyles = (
     default: {
       color: palette.cNeutral7,
       bgColor: palette.cNeutral8,
-      icon: React.createElement(XCircleFill),
+      icon: React.createElement(Bell),
     },
     primary: {
       color: palette.cTheme5,
-      bgColor: palette.cTheme0,
+      bgColor: palette.cNeutral8,
       icon: React.createElement(InfoFill),
     },
     success: {
       color: palette.success,
-      bgColor: palette.successLight,
+      bgColor: palette.cNeutral8,
       icon: React.createElement(CheckInCircleFill),
     },
     warning: {
       color: palette.warning,
-      bgColor: palette.warningLight,
+      bgColor: palette.cNeutral8,
       icon: React.createElement(AlertCircleFill),
     },
     error: {
       color: palette.error,
-      bgColor: palette.errorLight,
+      bgColor: palette.cNeutral8,
       icon: React.createElement(XCircleFill),
     },
   }
