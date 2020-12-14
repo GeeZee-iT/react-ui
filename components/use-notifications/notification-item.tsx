@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import useTheme from '../styles/use-theme'
 import { Notification } from './use-notifications'
-import X from '@zeit-ui/react-icons/x'
 import Bell from '@zeit-ui/react-icons/bell'
+import ModalIcon from './modal-icon'
 
 export type NotificationItemProps = Notification & {
   id: string
@@ -70,11 +70,7 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
           <div className="title">{title}</div>
           {content !== '' && <div className="content">{content}</div>}
         </div>
-        {closeable && (
-          <div className="close" onClick={handleClose}>
-            <X />
-          </div>
-        )}
+        {closeable && <ModalIcon size={16} color={theme.palette.cNeutral5} onClick={handleClose} />}
         <style jsx>{`
           .notification {
             width: 28rem;
@@ -142,19 +138,6 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
             font-size: 1rem;
             color: ${theme.palette.cNeutral4};
             margin-top: calc(${theme.layout.gap} * 0.75);
-          }
-          .close {
-            height: 1.2857rem;
-            width: 1.2857rem;
-            cursor: pointer;
-            color: ${theme.palette.cNeutral3};
-            position: absolute;
-            right: 1.1429rem;
-            top: 1.1429rem;
-          }
-          .close > :global(svg) {
-            width: 100%;
-            height: 100%;
           }
         `}</style>
       </div>
