@@ -1,8 +1,8 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import useTheme from '../styles/use-theme'
 import { Notification } from './use-notifications'
 import X from '@zeit-ui/react-icons/x'
-import { getStyles } from './styles'
+import Bell from '@zeit-ui/react-icons/bell'
 
 export type NotificationItemProps = Notification & {
   id: string
@@ -13,10 +13,6 @@ const transitionDuration = 150
 const NotificationItem: React.FC<NotificationItemProps> = React.memo(
   ({ className, id, title, content, placement, delay, destroy, onClose, closeable, ...rest }) => {
     const theme = useTheme()
-    const { color, bgColor, icon } = useMemo(() => getStyles(theme.palette, rest.color), [
-      theme.palette,
-      rest.color,
-    ])
     let boxShadow: string = theme.expressiveness.D2
     const [visible, setVisible] = useState<boolean>(false)
     const [hide, setHide] = useState<boolean>(false)
@@ -69,7 +65,7 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
         } ${placement} ${rest.color}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}>
-        <div className="icon">{rest.icon || icon}</div>
+        <div className="icon">{rest.icon || <Bell />}</div>
         <div>
           <div className="title">{title}</div>
           {content !== '' && <div className="content">{content}</div>}
@@ -82,7 +78,7 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
         <style jsx>{`
           .notification {
             width: 28rem;
-            background-color: ${bgColor};
+            background-color: ${theme.palette.cNeutral8};
             border: 0;
             border-radius: ${theme.expressiveness.R2};
             padding: ${theme.layout.gap};
@@ -126,7 +122,7 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
             margin-right: calc(${theme.layout.gap} * 0.75);
             flex-grow: 0;
             flex-shrink: 0;
-            color: ${color};
+            color: ${theme.palette.cNeutral7};
           }
           .icon > :global(svg) {
             width: 100%;

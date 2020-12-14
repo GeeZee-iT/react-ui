@@ -27,44 +27,6 @@ export const meta = {
 />
 
 <Playground
-  title="类型"
-  desc="包含 primary，success，warning，error 四种类型"
-  scope={{ Button, useNotifications, Spacer }}
-  code={`
-() => {
-  const [, setNotifications] = useNotifications()
-  const click = color => setNotifications({
-    title: '标题',
-    content: '你正在浏览文档站点。你正在浏览文档站点。你正在浏览文档站点。',
-    color,
-  })
-  const colors = [
-    ['primary', '主要'], 
-    ['success', '成功'], 
-    ['warning', '警告'], 
-    ['error', '错误']
-  ]
-  return (
-    <>
-      {colors.map(c => {
-        return (
-          <div key={c[0]}>
-            <Button 
-              onClick={() => click(c[0])} 
-              variant="solid" 
-              color={c[0]}
-            >{c[1]}</Button>
-            <Spacer y={.5} />
-          </div>
-        )
-      })}
-    </>
-  )
-}
-`}
-/>
-
-<Playground
   title="修改延时"
   desc="默认时长为 3s，可修改 delay 改变延时；如设置为 0s，则一直保持显示状态"
   scope={{ Button, useNotifications }}
@@ -134,13 +96,19 @@ export const meta = {
   return (
     <>
       <Button onClick={() => setNotification({ 
+        icon: <Icon.XCircleFill color="red" />,
+        title: '标题',
+        content: '你正在浏览文档站点。你正在浏览文档站点。你正在浏览文档站点。',
+      })}>错误</Button>
+      <Spacer y={.5} />
+      <Button onClick={() => setNotification({ 
         icon: <Icon.CheckInCircleFill color="green" />,
         title: '标题',
         content: '你正在浏览文档站点。你正在浏览文档站点。你正在浏览文档站点。',
       })}>成功</Button>
       <Spacer y={.5} />
       <Button onClick={() => setNotification({ 
-        icon: <Icon.AlertTriangleFill color="orange" />,
+        icon: <Icon.AlertCircleFill color="orange" />,
         title: '标题',
         content: '你正在浏览文档站点。你正在浏览文档站点。你正在浏览文档站点。',
       })}>警告</Button>
@@ -156,7 +124,6 @@ export const meta = {
 | 属性          | 描述                       | 类型                    | 推荐值                                          | 默认          |
 | ------------- | -------------------------- | ----------------------- | ----------------------------------------------- | ------------- |
 | **icon**      | 通知左侧图标               | `React.ReactNode`       | -                                               | `<Bell/>`     |
-| **color**     | 通知的颜色                 | `NotificationColors`    | [NotificationColors](#notificationcolors)       | `default`     |
 | **title**     | 通知的标题                 | `React.ReactNode`       | -                                               | -             |
 | **content**   | 通知的内容                 | `React.ReactNode`       | -                                               | -             |
 | **delay**     | 通知关闭的延迟时间（毫秒） | `number`                | -                                               | `3000`        |
@@ -164,12 +131,6 @@ export const meta = {
 | **placement** | 提示框与窗口的对齐方式     | `NotificationPlacement` | [NotificationPlacement](#notificationPlacement) | `right-start` |
 | **className** | 自定义样式                 | `string`                | -                                               | -             |
 | ...           | 原生属性                   | `ButtonHTMLAttributes`  | `'id', 'className', ...`                        | -             |
-
-<Attributes.Title>NotificationColors</Attributes.Title>
-
-```ts
-type NotificationColors = 'default' | 'primary' | 'success' | 'warning' | 'error'
-```
 
 <Attributes.Title>NotificationPlacement</Attributes.Title>
 
