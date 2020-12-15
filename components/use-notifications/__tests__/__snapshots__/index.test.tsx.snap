@@ -50,6 +50,9 @@ exports[`UseNotification should render correctly 1`] = `
           .icon {
             height: 1.4286rem;
             width: 1.4286rem;
+            display: flex;
+            align-items: center;
+            justify-items: center;
             margin-right: calc(1.1429rem * 0.75);
             flex-grow: 0;
             flex-shrink: 0;
@@ -143,6 +146,9 @@ exports[`UseNotification should render with custom icon correctly 1`] = `
           .icon {
             height: 1.4286rem;
             width: 1.4286rem;
+            display: flex;
+            align-items: center;
+            justify-items: center;
             margin-right: calc(1.1429rem * 0.75);
             flex-grow: 0;
             flex-shrink: 0;
@@ -236,6 +242,9 @@ exports[`UseNotification should work with different placement 1`] = `
           .icon {
             height: 1.4286rem;
             width: 1.4286rem;
+            display: flex;
+            align-items: center;
+            justify-items: center;
             margin-right: calc(1.1429rem * 0.75);
             flex-grow: 0;
             flex-shrink: 0;
@@ -309,6 +318,9 @@ exports[`UseNotification should work with different placement 1`] = `
           .icon {
             height: 1.4286rem;
             width: 1.4286rem;
+            display: flex;
+            align-items: center;
+            justify-items: center;
             margin-right: calc(1.1429rem * 0.75);
             flex-grow: 0;
             flex-shrink: 0;

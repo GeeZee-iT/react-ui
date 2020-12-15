@@ -115,6 +115,9 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
           .icon {
             height: 1.4286rem;
             width: 1.4286rem;
+            display: flex;
+            align-items: center;
+            justify-items: center;
             margin-right: calc(${theme.layout.gap} * 0.75);
             flex-grow: 0;
             flex-shrink: 0;
