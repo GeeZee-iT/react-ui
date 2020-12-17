@@ -86,6 +86,7 @@ const NotificationItem: React.FC<NotificationItemProps> = React.memo(
             opacity: 0;
             transition: transform ${transitionDuration}ms, opacity ${transitionDuration}ms;
             display: flex;
+            flex: 0 0 auto;
           }
 
           .notification.right-start {
