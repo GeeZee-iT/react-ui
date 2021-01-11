@@ -2,7 +2,6 @@ import dayjs from 'dayjs'
 import { useState } from 'react'
 import { Layout, Playground, Attributes } from 'lib/components'
 import { Link, Text, Code, Spacer, DatePicker, Divider, Button } from 'components'
-import { useDatePickerHandle } from 'components/date-picker'
 import NextLink from 'next/link'
 
 export const meta = {
@@ -703,12 +702,12 @@ export const meta = {
 <Playground
   title="使用 `UseDatePickerHandle`"
   desc="使用 `hooks` 捕获日期选择框的变化。"
-  scope={{ DatePicker, Spacer, Button, dayjs, Divider, useDatePickerHandle }}
+  scope={{ DatePicker, Spacer, Button, dayjs, Divider }}
   code={`
 () => {
   const { RangePicker } = DatePicker
-  const { ref, setValue, getValue, focus, blur } = useDatePickerHandle()
-  const { ref: ref2, setValue: setValue2, getValue: getValue2, focus: focus2, blur: blur2 } = useDatePickerHandle()
+  const { ref, setValue, getValue, focus, blur } = DatePicker.useDatePickerHandle()
+  const { ref: ref2, setValue: setValue2, getValue: getValue2, focus: focus2, blur: blur2 } = DatePicker.useDatePickerHandle()
   const setChange = () => {
     console.log(ref)
     setValue(dayjs())
@@ -892,12 +891,12 @@ export const meta = {
 
 <Attributes.Title>共同的方法</Attributes.Title>
 
-| 名称           | 描述     | 参数                 | 返回值               |
-| -------------- | -------- | -------------------- | -------------------- |
-| **blur()**     | 移除焦点 | -                    | -                    |
-| **focus()**    | 获取焦点 | -                    | -                    |
-| **setValue()** | 设置值   | `dayjs` \| `dayjs[]` \| `null` | -                    |
-| **getValue()** | 获取值   | -                    | `dayjs` \| `dayjs[]` \| `null` |
+| 名称           | 描述     | 参数                           | 返回值                         |
+| -------------- | -------- | ------------------------------ | ------------------------------ |
+| **blur()**     | 移除焦点 | -                              | -                              |
+| **focus()**    | 获取焦点 | -                              | -                              |
+| **setValue()** | 设置值   | `dayjs` \| `dayjs[]` \| `null` | -                              |
+| **getValue()** | 获取值   | -                              | `dayjs` \| `dayjs[]` \| `null` |
 
 <Attributes.Title>useDatePickerHandle</Attributes.Title>
 

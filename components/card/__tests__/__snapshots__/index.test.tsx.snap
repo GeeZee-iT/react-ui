@@ -4,7 +4,7 @@ exports[`Card should render correctly when nested 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "card ",
+      "class": "card  solid",
     },
     "children": Array [
       Object {
@@ -14,7 +14,7 @@ initialize {
         "children": Array [
           Object {
             "attribs": Object {
-              "class": "card ",
+              "class": "card  solid",
             },
             "children": Array [
               Object {
@@ -24,7 +24,7 @@ initialize {
                 "children": Array [
                   Object {
                     "attribs": Object {
-                      "class": "card ",
+                      "class": "card  solid",
                     },
                     "children": Array [
                       Object {
@@ -41,7 +41,7 @@ initialize {
                                   "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -78,7 +78,7 @@ initialize {
                                 "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -127,7 +127,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -136,15 +136,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                               "next": null,
@@ -186,7 +177,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -195,15 +186,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                             "next": null,
@@ -230,7 +212,7 @@ initialize {
                                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -267,7 +249,7 @@ initialize {
                                   "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -327,7 +309,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -370,7 +352,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -393,7 +375,7 @@ initialize {
                     "parent": [Circular],
                     "prev": Object {
                       "attribs": Object {
-                        "class": "card ",
+                        "class": "card  solid",
                       },
                       "children": Array [
                         Object {
@@ -410,7 +392,7 @@ initialize {
                                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -447,7 +429,7 @@ initialize {
                                   "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -496,7 +478,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -505,15 +487,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                 "next": null,
@@ -555,7 +528,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -564,15 +537,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                               "next": null,
@@ -599,7 +563,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -636,7 +600,7 @@ initialize {
                                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -721,7 +685,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -730,15 +694,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                       "next": null,
@@ -780,7 +735,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -789,15 +744,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                     "next": null,
@@ -817,7 +763,7 @@ initialize {
                   "children": Array [
                     Object {
                       "attribs": Object {
-                        "class": "card ",
+                        "class": "card  solid",
                       },
                       "children": Array [
                         Object {
@@ -834,7 +780,7 @@ initialize {
                                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -871,7 +817,7 @@ initialize {
                                   "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -920,7 +866,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -929,15 +875,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                 "next": null,
@@ -979,7 +916,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -988,15 +925,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                               "next": null,
@@ -1023,7 +951,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -1060,7 +988,7 @@ initialize {
                                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -1120,7 +1048,7 @@ initialize {
                             "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -1163,7 +1091,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -1186,7 +1114,7 @@ initialize {
                       "parent": [Circular],
                       "prev": Object {
                         "attribs": Object {
-                          "class": "card ",
+                          "class": "card  solid",
                         },
                         "children": Array [
                           Object {
@@ -1203,7 +1131,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -1240,7 +1168,7 @@ initialize {
                                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -1289,7 +1217,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -1298,15 +1226,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                   "next": null,
@@ -1348,7 +1267,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -1357,15 +1276,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                 "next": null,
@@ -1392,7 +1302,7 @@ initialize {
                                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -1429,7 +1339,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -1525,7 +1435,7 @@ initialize {
                   "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -1568,7 +1478,7 @@ initialize {
                 "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -1591,7 +1501,7 @@ initialize {
             "parent": [Circular],
             "prev": Object {
               "attribs": Object {
-                "class": "card ",
+                "class": "card  solid",
               },
               "children": Array [
                 Object {
@@ -1601,7 +1511,7 @@ initialize {
                   "children": Array [
                     Object {
                       "attribs": Object {
-                        "class": "card ",
+                        "class": "card  solid",
                       },
                       "children": Array [
                         Object {
@@ -1618,7 +1528,7 @@ initialize {
                                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -1655,7 +1565,7 @@ initialize {
                                   "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -1704,7 +1614,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -1713,15 +1623,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                 "next": null,
@@ -1763,7 +1664,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -1772,15 +1673,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                               "next": null,
@@ -1807,7 +1699,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -1844,7 +1736,7 @@ initialize {
                                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -1904,7 +1796,7 @@ initialize {
                             "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -1947,7 +1839,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -1970,7 +1862,7 @@ initialize {
                       "parent": [Circular],
                       "prev": Object {
                         "attribs": Object {
-                          "class": "card ",
+                          "class": "card  solid",
                         },
                         "children": Array [
                           Object {
@@ -1987,7 +1879,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -2024,7 +1916,7 @@ initialize {
                                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -2073,7 +1965,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -2082,15 +1974,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                   "next": null,
@@ -2132,7 +2015,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -2141,15 +2024,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                 "next": null,
@@ -2176,7 +2050,7 @@ initialize {
                                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -2213,7 +2087,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -2298,7 +2172,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -2307,15 +2181,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                         "next": null,
@@ -2357,7 +2222,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -2366,15 +2231,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                       "next": null,
@@ -2394,7 +2250,7 @@ initialize {
                     "children": Array [
                       Object {
                         "attribs": Object {
-                          "class": "card ",
+                          "class": "card  solid",
                         },
                         "children": Array [
                           Object {
@@ -2411,7 +2267,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -2448,7 +2304,7 @@ initialize {
                                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -2497,7 +2353,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -2506,15 +2362,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                   "next": null,
@@ -2556,7 +2403,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -2565,15 +2412,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                 "next": null,
@@ -2600,7 +2438,7 @@ initialize {
                                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -2637,7 +2475,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -2697,7 +2535,7 @@ initialize {
                               "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -2740,7 +2578,7 @@ initialize {
                             "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -2763,7 +2601,7 @@ initialize {
                         "parent": [Circular],
                         "prev": Object {
                           "attribs": Object {
-                            "class": "card ",
+                            "class": "card  solid",
                           },
                           "children": Array [
                             Object {
@@ -2780,7 +2618,7 @@ initialize {
                                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -2817,7 +2655,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -2866,7 +2704,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -2875,15 +2713,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                     "next": null,
@@ -2925,7 +2754,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -2934,15 +2763,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                   "next": null,
@@ -2969,7 +2789,7 @@ initialize {
                                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -3006,7 +2826,7 @@ initialize {
                                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -3127,7 +2947,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -3136,15 +2956,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
               "next": null,
@@ -3186,7 +2997,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -3195,15 +3006,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
             "next": null,
@@ -3223,7 +3025,7 @@ initialize {
           "children": Array [
             Object {
               "attribs": Object {
-                "class": "card ",
+                "class": "card  solid",
               },
               "children": Array [
                 Object {
@@ -3233,7 +3035,7 @@ initialize {
                   "children": Array [
                     Object {
                       "attribs": Object {
-                        "class": "card ",
+                        "class": "card  solid",
                       },
                       "children": Array [
                         Object {
@@ -3250,7 +3052,7 @@ initialize {
                                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -3287,7 +3089,7 @@ initialize {
                                   "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -3336,7 +3138,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -3345,15 +3147,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                 "next": null,
@@ -3395,7 +3188,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -3404,15 +3197,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                               "next": null,
@@ -3439,7 +3223,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -3476,7 +3260,7 @@ initialize {
                                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -3536,7 +3320,7 @@ initialize {
                             "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -3579,7 +3363,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -3602,7 +3386,7 @@ initialize {
                       "parent": [Circular],
                       "prev": Object {
                         "attribs": Object {
-                          "class": "card ",
+                          "class": "card  solid",
                         },
                         "children": Array [
                           Object {
@@ -3619,7 +3403,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -3656,7 +3440,7 @@ initialize {
                                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -3705,7 +3489,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -3714,15 +3498,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                   "next": null,
@@ -3764,7 +3539,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -3773,15 +3548,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                 "next": null,
@@ -3808,7 +3574,7 @@ initialize {
                                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -3845,7 +3611,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -3930,7 +3696,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -3939,15 +3705,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                         "next": null,
@@ -3989,7 +3746,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -3998,15 +3755,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                       "next": null,
@@ -4026,7 +3774,7 @@ initialize {
                     "children": Array [
                       Object {
                         "attribs": Object {
-                          "class": "card ",
+                          "class": "card  solid",
                         },
                         "children": Array [
                           Object {
@@ -4043,7 +3791,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -4080,7 +3828,7 @@ initialize {
                                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -4129,7 +3877,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -4138,15 +3886,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                   "next": null,
@@ -4188,7 +3927,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -4197,15 +3936,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                 "next": null,
@@ -4232,7 +3962,7 @@ initialize {
                                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -4269,7 +3999,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -4329,7 +4059,7 @@ initialize {
                               "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -4372,7 +4102,7 @@ initialize {
                             "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -4395,7 +4125,7 @@ initialize {
                         "parent": [Circular],
                         "prev": Object {
                           "attribs": Object {
-                            "class": "card ",
+                            "class": "card  solid",
                           },
                           "children": Array [
                             Object {
@@ -4412,7 +4142,7 @@ initialize {
                                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -4449,7 +4179,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -4498,7 +4228,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -4507,15 +4237,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                     "next": null,
@@ -4557,7 +4278,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -4566,15 +4287,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                   "next": null,
@@ -4601,7 +4313,7 @@ initialize {
                                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -4638,7 +4350,7 @@ initialize {
                                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -4734,7 +4446,7 @@ initialize {
                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -4777,7 +4489,7 @@ initialize {
                   "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -4800,7 +4512,7 @@ initialize {
               "parent": [Circular],
               "prev": Object {
                 "attribs": Object {
-                  "class": "card ",
+                  "class": "card  solid",
                 },
                 "children": Array [
                   Object {
@@ -4810,7 +4522,7 @@ initialize {
                     "children": Array [
                       Object {
                         "attribs": Object {
-                          "class": "card ",
+                          "class": "card  solid",
                         },
                         "children": Array [
                           Object {
@@ -4827,7 +4539,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -4864,7 +4576,7 @@ initialize {
                                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -4913,7 +4625,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -4922,15 +4634,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                   "next": null,
@@ -4972,7 +4675,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -4981,15 +4684,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                 "next": null,
@@ -5016,7 +4710,7 @@ initialize {
                                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -5053,7 +4747,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -5113,7 +4807,7 @@ initialize {
                               "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -5156,7 +4850,7 @@ initialize {
                             "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -5179,7 +4873,7 @@ initialize {
                         "parent": [Circular],
                         "prev": Object {
                           "attribs": Object {
-                            "class": "card ",
+                            "class": "card  solid",
                           },
                           "children": Array [
                             Object {
@@ -5196,7 +4890,7 @@ initialize {
                                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -5233,7 +4927,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -5282,7 +4976,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -5291,15 +4985,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                     "next": null,
@@ -5341,7 +5026,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -5350,15 +5035,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                   "next": null,
@@ -5385,7 +5061,7 @@ initialize {
                                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -5422,7 +5098,7 @@ initialize {
                                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -5507,7 +5183,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -5516,15 +5192,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                           "next": null,
@@ -5566,7 +5233,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -5575,15 +5242,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                         "next": null,
@@ -5603,7 +5261,7 @@ initialize {
                       "children": Array [
                         Object {
                           "attribs": Object {
-                            "class": "card ",
+                            "class": "card  solid",
                           },
                           "children": Array [
                             Object {
@@ -5620,7 +5278,7 @@ initialize {
                                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -5657,7 +5315,7 @@ initialize {
                                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -5706,7 +5364,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -5715,15 +5373,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                     "next": null,
@@ -5765,7 +5414,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -5774,15 +5423,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                   "next": null,
@@ -5809,7 +5449,7 @@ initialize {
                                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -5846,7 +5486,7 @@ initialize {
                                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -5906,7 +5546,7 @@ initialize {
                                 "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -5949,7 +5589,7 @@ initialize {
                               "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -5972,7 +5612,7 @@ initialize {
                           "parent": [Circular],
                           "prev": Object {
                             "attribs": Object {
-                              "class": "card ",
+                              "class": "card  solid",
                             },
                             "children": Array [
                               Object {
@@ -5989,7 +5629,7 @@ initialize {
                                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -6026,7 +5666,7 @@ initialize {
                                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -6075,7 +5715,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -6084,15 +5724,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                       "next": null,
@@ -6134,7 +5765,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -6143,15 +5774,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                                     "next": null,
@@ -6178,7 +5800,7 @@ initialize {
                                             "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -6215,7 +5837,7 @@ initialize {
                                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -6383,7 +6005,7 @@ initialize {
     "children": Array [
       Object {
         "attribs": Object {
-          "class": "card ",
+          "class": "card  solid",
         },
         "children": Array [
           Object {
@@ -6400,7 +6022,7 @@ initialize {
                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -6437,7 +6059,7 @@ initialize {
                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -6486,7 +6108,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -6495,15 +6117,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                   "next": null,
@@ -6545,7 +6158,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -6554,15 +6167,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                 "next": null,
@@ -6589,7 +6193,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -6626,7 +6230,7 @@ initialize {
                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -6681,7 +6285,7 @@ initialize {
         "namespace": "http://www.w3.org/1999/xhtml",
         "next": Object {
           "attribs": Object {
-            "class": "card ",
+            "class": "card  line",
           },
           "children": Array [
             Object {
@@ -6698,7 +6302,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -6735,7 +6339,7 @@ initialize {
                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -6784,24 +6388,15 @@ initialize {
           border-radius: 4px;
           box-shadow: none;
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
-          border: 2px solid #dbdde0;
+          border: 2px solid #ccc;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
-          border: 2px solid #aaafbb;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
+          border: 2px solid #999;
         }
       ",
                     "next": null,
@@ -6843,24 +6438,15 @@ initialize {
           border-radius: 4px;
           box-shadow: none;
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
-          border: 2px solid #dbdde0;
+          border: 2px solid #ccc;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
-          border: 2px solid #aaafbb;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
+          border: 2px solid #999;
         }
       ",
                   "next": null,
@@ -6887,7 +6473,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -6924,7 +6510,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -6979,7 +6565,7 @@ initialize {
           "namespace": "http://www.w3.org/1999/xhtml",
           "next": Object {
             "attribs": Object {
-              "class": "card ",
+              "class": "card  solid",
             },
             "children": Array [
               Object {
@@ -6996,7 +6582,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -7033,7 +6619,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -7082,7 +6668,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -7091,15 +6677,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                       "next": null,
@@ -7141,7 +6718,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -7150,15 +6727,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                     "next": null,
@@ -7185,7 +6753,7 @@ initialize {
                             "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -7222,7 +6790,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -7277,7 +6845,7 @@ initialize {
             "namespace": "http://www.w3.org/1999/xhtml",
             "next": Object {
               "attribs": Object {
-                "class": "card ",
+                "class": "card  solid",
               },
               "children": Array [
                 Object {
@@ -7294,7 +6862,7 @@ initialize {
                             "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -7331,7 +6899,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -7380,7 +6948,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -7389,15 +6957,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                         "next": null,
@@ -7439,7 +6998,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -7448,15 +7007,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                       "next": null,
@@ -7483,7 +7033,7 @@ initialize {
                               "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -7520,7 +7070,7 @@ initialize {
                             "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -7616,7 +7166,7 @@ initialize {
       },
       Object {
         "attribs": Object {
-          "class": "card ",
+          "class": "card  line",
         },
         "children": Array [
           Object {
@@ -7633,7 +7183,7 @@ initialize {
                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -7670,7 +7220,7 @@ initialize {
                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -7719,24 +7269,15 @@ initialize {
           border-radius: 4px;
           box-shadow: none;
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
-          border: 2px solid #dbdde0;
+          border: 2px solid #ccc;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
-          border: 2px solid #aaafbb;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
+          border: 2px solid #999;
         }
       ",
                   "next": null,
@@ -7778,24 +7319,15 @@ initialize {
           border-radius: 4px;
           box-shadow: none;
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
-          border: 2px solid #dbdde0;
+          border: 2px solid #ccc;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
-          border: 2px solid #aaafbb;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
+          border: 2px solid #999;
         }
       ",
                 "next": null,
@@ -7822,7 +7354,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -7859,7 +7391,7 @@ initialize {
                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -7914,7 +7446,7 @@ initialize {
         "namespace": "http://www.w3.org/1999/xhtml",
         "next": Object {
           "attribs": Object {
-            "class": "card ",
+            "class": "card  solid",
           },
           "children": Array [
             Object {
@@ -7931,7 +7463,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -7968,7 +7500,7 @@ initialize {
                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -8017,7 +7549,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -8026,15 +7558,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                     "next": null,
@@ -8076,7 +7599,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -8085,15 +7608,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                   "next": null,
@@ -8120,7 +7634,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -8157,7 +7671,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -8212,7 +7726,7 @@ initialize {
           "namespace": "http://www.w3.org/1999/xhtml",
           "next": Object {
             "attribs": Object {
-              "class": "card ",
+              "class": "card  solid",
             },
             "children": Array [
               Object {
@@ -8229,7 +7743,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -8266,7 +7780,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -8315,7 +7829,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -8324,15 +7838,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                       "next": null,
@@ -8374,7 +7879,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -8383,15 +7888,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                     "next": null,
@@ -8418,7 +7914,7 @@ initialize {
                             "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -8455,7 +7951,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -8532,7 +8028,7 @@ initialize {
         "parent": [Circular],
         "prev": Object {
           "attribs": Object {
-            "class": "card ",
+            "class": "card  solid",
           },
           "children": Array [
             Object {
@@ -8549,7 +8045,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -8586,7 +8082,7 @@ initialize {
                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -8635,7 +8131,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -8644,15 +8140,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                     "next": null,
@@ -8694,7 +8181,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -8703,15 +8190,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                   "next": null,
@@ -8738,7 +8216,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -8775,7 +8253,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -8849,7 +8327,7 @@ initialize {
       },
       Object {
         "attribs": Object {
-          "class": "card ",
+          "class": "card  solid",
         },
         "children": Array [
           Object {
@@ -8866,7 +8344,7 @@ initialize {
                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -8903,7 +8381,7 @@ initialize {
                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -8952,7 +8430,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -8961,15 +8439,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                   "next": null,
@@ -9011,7 +8480,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -9020,15 +8489,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                 "next": null,
@@ -9055,7 +8515,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -9092,7 +8552,7 @@ initialize {
                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -9147,7 +8607,7 @@ initialize {
         "namespace": "http://www.w3.org/1999/xhtml",
         "next": Object {
           "attribs": Object {
-            "class": "card ",
+            "class": "card  solid",
           },
           "children": Array [
             Object {
@@ -9164,7 +8624,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -9201,7 +8661,7 @@ initialize {
                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -9250,7 +8710,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -9259,15 +8719,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                     "next": null,
@@ -9309,7 +8760,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -9318,15 +8769,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                   "next": null,
@@ -9353,7 +8795,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -9390,7 +8832,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -9457,7 +8899,7 @@ initialize {
         "parent": [Circular],
         "prev": Object {
           "attribs": Object {
-            "class": "card ",
+            "class": "card  line",
           },
           "children": Array [
             Object {
@@ -9474,7 +8916,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -9511,7 +8953,7 @@ initialize {
                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -9560,24 +9002,15 @@ initialize {
           border-radius: 4px;
           box-shadow: none;
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
-          border: 2px solid #dbdde0;
+          border: 2px solid #ccc;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
-          border: 2px solid #aaafbb;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
+          border: 2px solid #999;
         }
       ",
                     "next": null,
@@ -9619,24 +9052,15 @@ initialize {
           border-radius: 4px;
           box-shadow: none;
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
-          border: 2px solid #dbdde0;
+          border: 2px solid #ccc;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
-          border: 2px solid #aaafbb;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
+          border: 2px solid #999;
         }
       ",
                   "next": null,
@@ -9663,7 +9087,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -9700,7 +9124,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -9757,7 +9181,7 @@ initialize {
           "parent": [Circular],
           "prev": Object {
             "attribs": Object {
-              "class": "card ",
+              "class": "card  solid",
             },
             "children": Array [
               Object {
@@ -9774,7 +9198,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -9811,7 +9235,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -9860,7 +9284,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -9869,15 +9293,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                       "next": null,
@@ -9919,7 +9334,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -9928,15 +9343,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                     "next": null,
@@ -9963,7 +9369,7 @@ initialize {
                             "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -10000,7 +9406,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -10082,7 +9488,7 @@ initialize {
       },
       Object {
         "attribs": Object {
-          "class": "card ",
+          "class": "card  solid",
         },
         "children": Array [
           Object {
@@ -10099,7 +9505,7 @@ initialize {
                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -10136,7 +9542,7 @@ initialize {
                     "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -10185,7 +9591,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -10194,15 +9600,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                   "next": null,
@@ -10244,7 +9641,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -10253,15 +9650,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                 "next": null,
@@ -10288,7 +9676,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -10325,7 +9713,7 @@ initialize {
                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -10382,7 +9770,7 @@ initialize {
         "parent": [Circular],
         "prev": Object {
           "attribs": Object {
-            "class": "card ",
+            "class": "card  solid",
           },
           "children": Array [
             Object {
@@ -10399,7 +9787,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -10436,7 +9824,7 @@ initialize {
                       "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -10485,7 +9873,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -10494,15 +9882,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                     "next": null,
@@ -10544,7 +9923,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -10553,15 +9932,6 @@ initialize {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                   "next": null,
@@ -10588,7 +9958,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -10625,7 +9995,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -10682,7 +10052,7 @@ initialize {
           "parent": [Circular],
           "prev": Object {
             "attribs": Object {
-              "class": "card ",
+              "class": "card  line",
             },
             "children": Array [
               Object {
@@ -10699,7 +10069,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -10736,7 +10106,7 @@ initialize {
                         "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -10785,24 +10155,15 @@ initialize {
           border-radius: 4px;
           box-shadow: none;
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
-          border: 2px solid #dbdde0;
+          border: 2px solid #ccc;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
-          border: 2px solid #aaafbb;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
+          border: 2px solid #999;
         }
       ",
                       "next": null,
@@ -10844,24 +10205,15 @@ initialize {
           border-radius: 4px;
           box-shadow: none;
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
-          border: 2px solid #dbdde0;
+          border: 2px solid #ccc;
         }
 
         .card:hover {
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           background-color: #fff;
-          border: 2px solid #aaafbb;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
+          border: 2px solid #999;
         }
       ",
                     "next": null,
@@ -10888,7 +10240,7 @@ initialize {
                             "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -10925,7 +10277,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -10982,7 +10334,7 @@ initialize {
             "parent": [Circular],
             "prev": Object {
               "attribs": Object {
-                "class": "card ",
+                "class": "card  solid",
               },
               "children": Array [
                 Object {
@@ -10999,7 +10351,7 @@ initialize {
                             "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -11036,7 +10388,7 @@ initialize {
                           "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -11085,7 +10437,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -11094,15 +10446,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                         "next": null,
@@ -11144,7 +10487,7 @@ initialize {
           border-radius: 4px;
           box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.08);
           box-sizing: border-box;
-          color: #282d30;
+          color: #333;
           background-color: #fff;
           border: 2px solid transparent;
         }
@@ -11153,15 +10496,6 @@ initialize {
           box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.12);
           background-color: #f9fafb;
           border: 2px solid transparent;
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       ",
                       "next": null,
@@ -11188,7 +10522,7 @@ initialize {
                               "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {
@@ -11225,7 +10559,7 @@ initialize {
                             "data": "
         .content {
           width: 100%;
-          padding: 16px 16px;
+          padding: 1.1429rem 1.1429rem;
         }
 
         .content &gt; :global(*:first-child) {

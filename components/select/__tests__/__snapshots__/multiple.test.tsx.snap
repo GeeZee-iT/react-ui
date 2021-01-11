@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select Multiple should ignore events when disabled 1`] = `
-"<div class=\\"select multiple \\"><span class=\\"value placeholder\\"><span><style>
+"<div class=\\"select multiple line \\"><span class=\\"value placeholder\\"><span><style>
         span {
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
-          line-height: calc(2.625 * 16px);
+          line-height: calc(2.625 * 1.1429rem);
           min-width: 0;
         }
       </style></span></span><div class=\\"item  mock \\"><style>
@@ -99,10 +99,10 @@ exports[`Select Multiple should ignore events when disabled 1`] = `
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
-              padding: 0 calc(8px * 1.5) 0 16px;
-              height: calc(2.625 * 16px);
+              padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
+              height: calc(2.625 * 1.1429rem);
               background-color: #fff;
             }
             .select-dropdown {
@@ -112,27 +112,27 @@ exports[`Select Multiple should ignore events when disabled 1`] = `
               max-height: 15rem;
               overflow-y: auto;
               overflow-anchor: none;
-              padding: 8px 0;
+              padding: 0.5714rem 0;
             }
 
             .multiple {
               height: auto;
-              min-height: calc(2.625 * 16px);
-              padding: 4px calc(1rem * 2)
-                4px 8px;
+              min-height: calc(2.625 * 1.1429rem);
+              padding: 0.2857rem calc(1rem * 2)
+                0.2857rem 0.5714rem;
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -168,12 +168,12 @@ exports[`Select Multiple should ignore events when disabled 1`] = `
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {
               position: absolute;
-              right: calc(8px * 1.5);
+              right: calc(0.5714rem * 1.5);
               font-size: 1rem;
               top: 50%;
               bottom: 0;
@@ -188,12 +188,12 @@ exports[`Select Multiple should ignore events when disabled 1`] = `
 `;
 
 exports[`Select Multiple should render correctly 1`] = `
-"<div class=\\"select multiple \\"><span class=\\"value placeholder\\"><span><style>
+"<div class=\\"select multiple line \\"><span class=\\"value placeholder\\"><span><style>
         span {
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
-          line-height: calc(2.625 * 16px);
+          line-height: calc(2.625 * 1.1429rem);
           min-width: 0;
         }
       </style></span></span><div class=\\"item  mock \\"><style>
@@ -286,10 +286,10 @@ exports[`Select Multiple should render correctly 1`] = `
               overflow: hidden;
               transition: border 0.2s ease 0s, color 0.2s ease-out 0s, box-shadow 0.2s ease 0s;
               border: 1px solid
-                #dbdde0;
+                #ccc;
               border-radius: 4px;
-              padding: 0 calc(8px * 1.5) 0 16px;
-              height: calc(2.625 * 16px);
+              padding: 0 calc(0.5714rem * 1.5) 0 1.1429rem;
+              height: calc(2.625 * 1.1429rem);
               background-color: #fff;
             }
             .select-dropdown {
@@ -299,27 +299,27 @@ exports[`Select Multiple should render correctly 1`] = `
               max-height: 15rem;
               overflow-y: auto;
               overflow-anchor: none;
-              padding: 8px 0;
+              padding: 0.5714rem 0;
             }
 
             .multiple {
               height: auto;
-              min-height: calc(2.625 * 16px);
-              padding: 4px calc(1rem * 2)
-                4px 8px;
+              min-height: calc(2.625 * 1.1429rem);
+              padding: 0.2857rem calc(1rem * 2)
+                0.2857rem 0.5714rem;
             }
 
             .select:hover {
-              border-color: #0054fe;
+              border-color: #1e3de4;
               background-color: #fff;
             }
 
             .select:hover .icon,
             .select:hover .value {
-              color: #0054fe;
+              color: #1e3de4;
             }
             .select:hover .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .value {
@@ -355,12 +355,12 @@ exports[`Select Multiple should render correctly 1`] = `
             }
 
             .placeholder {
-              color: #9b9eac;
+              color: #666;
             }
 
             .icon {
               position: absolute;
-              right: calc(8px * 1.5);
+              right: calc(0.5714rem * 1.5);
               font-size: 1rem;
               top: 50%;
               bottom: 0;

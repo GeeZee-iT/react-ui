@@ -1,22 +1,22 @@
 export const tuple = <T extends string[]>(...args: T) => args
 //todo better syntax related to tuple?
 export const variantsTuple = <T extends ('solid' | 'line' | 'text')[]>(...args: T) => args
-export const statusTuple = <T extends ('default' | 'hover' | 'active' | 'disabled')[]>(
-  ...args: T
-) => args
 
 const buttonVariants = variantsTuple('solid', 'line', 'text')
+
 const tabVariants = variantsTuple('solid', 'line')
+
 const inputVariants = tuple('solid', 'line')
 
 const buttonColors = tuple('default', 'primary', 'secondary', 'success', 'warning', 'error')
 
 const tagColors = tuple('default', 'primary', 'secondary', 'success', 'warning', 'error')
 
-const buttonStatus = tuple('default', 'hover', 'active', 'disabled')
-const tabStatus = statusTuple('default', 'hover', 'active', 'disabled')
-
 const messageColors = tuple('default', 'primary', 'success', 'warning', 'error')
+
+const notificationColors = tuple('default', 'primary', 'success', 'warning', 'error')
+
+const notificationPlacement = tuple('right-start', 'left-start')
 
 const selectVariants = tuple('line', 'text')
 
@@ -41,37 +41,46 @@ const copyTypes = tuple('default', 'slient', 'prevent')
 const triggerTypes = tuple('hover', 'click')
 
 const placement = tuple(
+  'auto',
+  'auto-start',
+  'auto-end',
   'top',
-  'topStart',
-  'topEnd',
+  'top-start',
+  'top-end',
   'left',
-  'leftStart',
-  'leftEnd',
+  'left-start',
+  'left-end',
   'bottom',
-  'bottomStart',
-  'bottomEnd',
+  'bottom-start',
+  'bottom-end',
   'right',
-  'rightStart',
-  'rightEnd',
+  'right-start',
+  'right-end',
 )
 
 const dividerAlign = tuple('start', 'center', 'end', 'left', 'right')
 
 const paginationVariants = tuple('line', 'solid')
 
+const skeletonVariants = tuple('text', 'circle', 'rect')
+
+const skeletonAnimations = tuple('pulse', 'wave', 'none')
+
 export type ButtonColors = typeof buttonColors[number]
 
 export type TagColors = typeof tagColors[number]
 
 export type ButtonVariants = typeof buttonVariants[number]
-export type TabVarient = typeof tabVariants[number]
+
+export type TabVariant = typeof tabVariants[number]
 
 export type TagVariants = ButtonVariants
 
-export type ButtonStatus = typeof buttonStatus[number]
-export type TabStatus = typeof tabStatus[number]
-
 export type MessageColors = typeof messageColors[number]
+
+export type NotificationColors = typeof notificationColors[number]
+
+export type NotificationPlacement = typeof notificationPlacement[number]
 
 export type NormalSizes = typeof normalSizes[number]
 
@@ -102,4 +111,9 @@ export type Placement = typeof placement[number]
 export type DividerAlign = typeof dividerAlign[number]
 
 export type PaginationVariants = typeof paginationVariants[number]
+
+export type SkeletonVariants = typeof skeletonVariants[number]
+
+export type SkeletonAnimations = typeof skeletonAnimations[number]
+
 export { normalSizes, inputVariants, inputColors, normalTypes, themeTypes }

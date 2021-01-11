@@ -45,7 +45,9 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       icon,
       iconRight,
       iconClickable,
+      iconRightClickable,
       onIconClick,
+      onIconRightClick,
       onChange,
       readOnly,
       onClearClick,
@@ -137,6 +139,10 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       if (disabled) return
       onIconClick && onIconClick(e)
     }
+    const iconRightClickHandler = (e: React.MouseEvent<HTMLDivElement>) => {
+      if (disabled) return
+      onIconRightClick && onIconRightClick(e)
+    }
     const iconProps = useMemo(
       () => ({
         ratio: heightRatio,
@@ -144,6 +150,15 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         onClick: iconClickHandler,
       }),
       [heightRatio, iconClickable, iconClickHandler],
+    )
+
+    const iconRightProps = useMemo(
+      () => ({
+        ratio: heightRatio,
+        clickable: iconRightClickable,
+        onClick: iconRightClickHandler,
+      }),
+      [heightRatio, iconRightClickable, iconRightClickHandler],
     )
 
     useEffect(() => {
@@ -195,7 +210,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
                 onClick={clearHandler}
               />
             )}
-            {iconRight && <InputIcon icon={iconRight} {...iconProps} />}
+            {iconRight && <InputIcon icon={iconRight} {...iconRightProps} />}
           </div>
           {labelRight && (
             <InputLabel htmlFor={props.id} variant={variant} fontSize={fontSize} isRight={true}>

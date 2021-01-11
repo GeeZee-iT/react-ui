@@ -176,6 +176,20 @@ describe('Input', () => {
     expect(click).not.toHaveBeenCalled()
   })
 
+  it('should ignore iconRight event when input disabled', () => {
+    const click = jest.fn()
+    const wrapper = mount(
+      <Input
+        iconRight={<span id="test-icon">icon</span>}
+        onIconRightClick={click}
+        iconRightClickable
+        disabled
+      />,
+    )
+    wrapper.find('#test-icon').simulate('click', nativeEvent)
+    expect(click).not.toHaveBeenCalled()
+  })
+
   it('should forward ref by default', () => {
     const ref = React.createRef<HTMLInputElement>()
     const wrapper = mount(<Input ref={ref} />)

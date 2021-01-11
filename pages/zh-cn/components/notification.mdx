@@ -1,0 +1,158 @@
+import { Layout, Playground, Attributes } from 'lib/components'
+import { useNotifications, Button, Spacer, Code } from 'components'
+import * as Icon from '@zeit-ui/react-icons'
+
+export const meta = {
+  title: '全局提示 Notification',
+  group: '反馈',
+}
+
+## Notification / 全局提示
+
+显示重要的全局通知信息
+
+<Playground
+  desc="基础示例"
+  scope={{ Button, useNotifications }}
+  code={`
+    () => {
+      const [notifications, setNotification] = useNotifications()
+      const click = () => setNotification({ 
+        title: '标题',
+        content: '你正在浏览文档站点。你正在浏览文档站点。你正在浏览文档站点。',
+      })
+      return <Button onClick={click}>显示通知</Button>
+    }
+  `}
+/>
+
+<Playground
+  title="修改延时"
+  desc="默认时长为 3s，可修改 delay 改变延时；如设置为 0s，则一直保持显示状态"
+  scope={{ Button, useNotifications }}
+  code={`
+() => {
+  const [, setNotification] = useNotifications()
+  const click = () => setNotification({ 
+    title: '标题',
+    content: '你正在浏览文档站点。你正在浏览文档站点。你正在浏览文档站点。',
+    delay: 10000
+  })
+  return <Button onClick={click}>显示通知</Button>
+}
+`}
+/>
+
+<Playground
+  title="手动关闭"
+  desc="传入 closeable，可设置为手动关闭通知"
+  scope={{ Button, useNotifications }}
+  code={`
+() => {
+  const [, setNotification] = useNotifications()
+  const click = () => setNotification({ 
+    title: '标题',
+    content: '你正在浏览文档站点。你正在浏览文档站点。你正在浏览文档站点。',
+    delay: 0,
+    closeable: true,
+  })
+  return <Button onClick={click}>显示通知</Button>
+}
+`}
+/>
+
+<Playground
+  title="对齐方式"
+  desc="有 2 种对齐方式可用。"
+  scope={{ Button, useNotifications, Icon, Spacer }}
+  code={`
+() => {
+  const [, setNotification] = useNotifications()
+  return (
+    <>
+      <Button onClick={() => setNotification({ 
+        title: '标题',
+        content: '你正在浏览文档站点。你正在浏览文档站点。你正在浏览文档站点。',
+      })}>右上</Button>
+      <Spacer y={.5} />
+      <Button onClick={() => setNotification({ 
+        title: '标题',
+        content: '你正在浏览文档站点。你正在浏览文档站点。你正在浏览文档站点。',
+        placement: 'left-start'
+      })}>左上</Button>
+    </>
+  )
+}
+`}
+/>
+
+<Playground
+  title="修改 icon"
+  desc="自定义 icon 图标样式"
+  scope={{ Button, useNotifications, Icon, Spacer }}
+  code={`
+() => {
+  const [, setNotification] = useNotifications()
+  return (
+    <>
+      <Button onClick={() => setNotification({ 
+        icon: <Icon.XCircleFill color="red" />,
+        title: '标题',
+        content: '你正在浏览文档站点。你正在浏览文档站点。你正在浏览文档站点。',
+      })}>错误</Button>
+      <Spacer y={.5} />
+      <Button onClick={() => setNotification({ 
+        icon: <Icon.CheckInCircleFill color="green" />,
+        title: '标题',
+        content: '你正在浏览文档站点。你正在浏览文档站点。你正在浏览文档站点。',
+      })}>成功</Button>
+      <Spacer y={.5} />
+      <Button onClick={() => setNotification({ 
+        icon: <Icon.AlertCircleFill color="orange" />,
+        title: '标题',
+        content: '你正在浏览文档站点。你正在浏览文档站点。你正在浏览文档站点。',
+      })}>警告</Button>
+    </>
+  )
+}
+`}
+/>
+
+<Attributes edit="/pages/zh-cn/components/notification.mdx">
+<Attributes.Title>useNotifications</Attributes.Title>
+
+| 属性          | 描述                       | 类型                    | 推荐值                                          | 默认          |
+| ------------- | -------------------------- | ----------------------- | ----------------------------------------------- | ------------- |
+| **icon**      | 通知左侧图标               | `React.ReactNode`       | -                                               | `<Bell/>`     |
+| **title**     | 通知的标题                 | `React.ReactNode`       | -                                               | -             |
+| **content**   | 通知的内容                 | `React.ReactNode`       | -                                               | -             |
+| **delay**     | 通知关闭的延迟时间（毫秒） | `number`                | -                                               | `3000`        |
+| **closeable** | 是否手动关闭               | `boolean`               | -                                               | `false`       |
+| **placement** | 提示框与窗口的对齐方式     | `NotificationPlacement` | [NotificationPlacement](#notificationPlacement) | `right-start` |
+| **className** | 自定义样式                 | `string`                | -                                               | -             |
+| ...           | 原生属性                   | `ButtonHTMLAttributes`  | `'id', 'className', ...`                        | -             |
+
+<Attributes.Title>NotificationPlacement</Attributes.Title>
+
+```ts
+type NotificationPlacement = 'right-start' | 'left-start'
+```
+
+<Attributes.Title>Notification</Attributes.Title>
+
+```ts
+interface Notification {
+  icon?: React.ReactNode
+  title: React.ReactNode
+  content: React.ReactNode
+  delay?: number
+  closeable?: boolean
+  className?: string
+  placement?: NotificationPlacement
+  onClose?: Function
+}
+```
+
+</Attributes>
+
+export default ({ children }) => <Layout meta={meta}>{children}</Layout>

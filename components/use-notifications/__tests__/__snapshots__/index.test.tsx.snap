@@ -1,0 +1,369 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UseNotification should render correctly 1`] = `
+"<div class=\\"notification-container\\"><div class=\\"notification  visible  right-start default\\"><div class=\\"icon\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: currentColor;\\"><path d=\\"M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0\\"></path></svg></div><div><div class=\\"title\\">test-title</div><div class=\\"content\\">test-content</div></div><div class=\\"close\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"16\\" width=\\"16\\" style=\\"color: rgb(102, 102, 102);\\"><path d=\\"M18 6L6 18M6 6l12 12\\"></path></svg><style>
+        .close {
+          position: absolute;
+          right: 1.1429rem;
+          top: 1.1429rem;
+          cursor: pointer;
+        }
+      </style></div><style>
+          .notification {
+            width: 28rem;
+            background-color: #fff;
+            border: 0;
+            border-radius: 4px;
+            padding: 1.1429rem;
+            box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+            margin-top: calc(1.1429rem * 1.5);
+            transform: translate(100%, 0);
+            opacity: 0;
+            transition: transform 150ms, opacity 150ms;
+            display: flex;
+            flex: 0 0 auto;
+          }
+
+          .notification.right-start {
+            align-self: flex-end;
+            margin-right: calc(1.1429rem * 1.25);
+          }
+
+          .notification.left-start {
+            align-self: flex-start;
+            margin-left: calc(1.1429rem * 1.25);
+          }
+
+          .notification:first-child {
+            margin-top: 0;
+          }
+          .notification.visible {
+            transform: translate(0, 0);
+            opacity: 1;
+            z-index: 2;
+          }
+          .notification.hide {
+            margin-top: -3.5714rem;
+            transform: translate(0, -100%);
+            opacity: 0;
+            z-index: 1;
+          }
+          .icon {
+            height: 1.4286rem;
+            width: 1.4286rem;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            margin-right: calc(1.1429rem * 0.75);
+            flex-grow: 0;
+            flex-shrink: 0;
+            color: #333;
+          }
+          .icon > :global(svg) {
+            width: 100%;
+            height: 100%;
+          }
+          .title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.2857rem;
+            line-height: 1.4286rem;
+            margin-right: 1.1429rem;
+            color: #333;
+          }
+          .content {
+            line-height: 1.2857rem;
+            font-size: 1rem;
+            color: #999;
+            margin-top: calc(1.1429rem * 0.75);
+          }
+        </style></div><style>
+        .notification-container {
+          position: fixed;
+          min-height: 0.7143rem;
+          top: calc(1.1429rem * 1.25);
+          left: 0;
+          right: 0;
+          z-index: 2000;
+          box-sizing: border-box;
+          overflow: visible;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 0;
+          visibility: visible;
+        }
+      </style></div>"
+`;
+
+exports[`UseNotification should render with custom icon correctly 1`] = `
+"<div class=\\"notification-container\\"><div class=\\"notification  visible  right-start default\\"><div class=\\"icon\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: red;\\"><path d=\\"M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22\\"></path></svg></div><div><div class=\\"title\\">test-title</div><div class=\\"content\\">test-content</div></div><div class=\\"close\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"16\\" width=\\"16\\" style=\\"color: rgb(102, 102, 102);\\"><path d=\\"M18 6L6 18M6 6l12 12\\"></path></svg><style>
+        .close {
+          position: absolute;
+          right: 1.1429rem;
+          top: 1.1429rem;
+          cursor: pointer;
+        }
+      </style></div><style>
+          .notification {
+            width: 28rem;
+            background-color: #fff;
+            border: 0;
+            border-radius: 4px;
+            padding: 1.1429rem;
+            box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+            margin-top: calc(1.1429rem * 1.5);
+            transform: translate(100%, 0);
+            opacity: 0;
+            transition: transform 150ms, opacity 150ms;
+            display: flex;
+            flex: 0 0 auto;
+          }
+
+          .notification.right-start {
+            align-self: flex-end;
+            margin-right: calc(1.1429rem * 1.25);
+          }
+
+          .notification.left-start {
+            align-self: flex-start;
+            margin-left: calc(1.1429rem * 1.25);
+          }
+
+          .notification:first-child {
+            margin-top: 0;
+          }
+          .notification.visible {
+            transform: translate(0, 0);
+            opacity: 1;
+            z-index: 2;
+          }
+          .notification.hide {
+            margin-top: -3.5714rem;
+            transform: translate(0, -100%);
+            opacity: 0;
+            z-index: 1;
+          }
+          .icon {
+            height: 1.4286rem;
+            width: 1.4286rem;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            margin-right: calc(1.1429rem * 0.75);
+            flex-grow: 0;
+            flex-shrink: 0;
+            color: #333;
+          }
+          .icon > :global(svg) {
+            width: 100%;
+            height: 100%;
+          }
+          .title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.2857rem;
+            line-height: 1.4286rem;
+            margin-right: 1.1429rem;
+            color: #333;
+          }
+          .content {
+            line-height: 1.2857rem;
+            font-size: 1rem;
+            color: #999;
+            margin-top: calc(1.1429rem * 0.75);
+          }
+        </style></div><style>
+        .notification-container {
+          position: fixed;
+          min-height: 0.7143rem;
+          top: calc(1.1429rem * 1.25);
+          left: 0;
+          right: 0;
+          z-index: 2000;
+          box-sizing: border-box;
+          overflow: visible;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 0;
+          visibility: visible;
+        }
+      </style></div>"
+`;
+
+exports[`UseNotification should work with different placement 1`] = `
+"<div class=\\"notification-container\\"><div class=\\"notification  visible  right-start default\\"><div class=\\"icon\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: currentColor;\\"><path d=\\"M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0\\"></path></svg></div><div><div class=\\"title\\">test-title</div><div class=\\"content\\">right-start test-content</div></div><div class=\\"close\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"16\\" width=\\"16\\" style=\\"color: rgb(102, 102, 102);\\"><path d=\\"M18 6L6 18M6 6l12 12\\"></path></svg><style>
+        .close {
+          position: absolute;
+          right: 1.1429rem;
+          top: 1.1429rem;
+          cursor: pointer;
+        }
+      </style></div><style>
+          .notification {
+            width: 28rem;
+            background-color: #fff;
+            border: 0;
+            border-radius: 4px;
+            padding: 1.1429rem;
+            box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+            margin-top: calc(1.1429rem * 1.5);
+            transform: translate(100%, 0);
+            opacity: 0;
+            transition: transform 150ms, opacity 150ms;
+            display: flex;
+            flex: 0 0 auto;
+          }
+
+          .notification.right-start {
+            align-self: flex-end;
+            margin-right: calc(1.1429rem * 1.25);
+          }
+
+          .notification.left-start {
+            align-self: flex-start;
+            margin-left: calc(1.1429rem * 1.25);
+          }
+
+          .notification:first-child {
+            margin-top: 0;
+          }
+          .notification.visible {
+            transform: translate(0, 0);
+            opacity: 1;
+            z-index: 2;
+          }
+          .notification.hide {
+            margin-top: -3.5714rem;
+            transform: translate(0, -100%);
+            opacity: 0;
+            z-index: 1;
+          }
+          .icon {
+            height: 1.4286rem;
+            width: 1.4286rem;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            margin-right: calc(1.1429rem * 0.75);
+            flex-grow: 0;
+            flex-shrink: 0;
+            color: #333;
+          }
+          .icon > :global(svg) {
+            width: 100%;
+            height: 100%;
+          }
+          .title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.2857rem;
+            line-height: 1.4286rem;
+            margin-right: 1.1429rem;
+            color: #333;
+          }
+          .content {
+            line-height: 1.2857rem;
+            font-size: 1rem;
+            color: #999;
+            margin-top: calc(1.1429rem * 0.75);
+          }
+        </style></div><div class=\\"notification  visible  left-start default\\"><div class=\\"icon\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" style=\\"color: currentColor;\\"><path d=\\"M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0\\"></path></svg></div><div><div class=\\"title\\">test-title</div><div class=\\"content\\">left-start test-content</div></div><div class=\\"close\\"><svg fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"1.5\\" shape-rendering=\\"geometricPrecision\\" viewBox=\\"0 0 24 24\\" height=\\"16\\" width=\\"16\\" style=\\"color: rgb(102, 102, 102);\\"><path d=\\"M18 6L6 18M6 6l12 12\\"></path></svg><style>
+        .close {
+          position: absolute;
+          right: 1.1429rem;
+          top: 1.1429rem;
+          cursor: pointer;
+        }
+      </style></div><style>
+          .notification {
+            width: 28rem;
+            background-color: #fff;
+            border: 0;
+            border-radius: 4px;
+            padding: 1.1429rem;
+            box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+            margin-top: calc(1.1429rem * 1.5);
+            transform: translate(-100%, 0);
+            opacity: 0;
+            transition: transform 150ms, opacity 150ms;
+            display: flex;
+            flex: 0 0 auto;
+          }
+
+          .notification.right-start {
+            align-self: flex-end;
+            margin-right: calc(1.1429rem * 1.25);
+          }
+
+          .notification.left-start {
+            align-self: flex-start;
+            margin-left: calc(1.1429rem * 1.25);
+          }
+
+          .notification:first-child {
+            margin-top: 0;
+          }
+          .notification.visible {
+            transform: translate(0, 0);
+            opacity: 1;
+            z-index: 2;
+          }
+          .notification.hide {
+            margin-top: -3.5714rem;
+            transform: translate(0, -100%);
+            opacity: 0;
+            z-index: 1;
+          }
+          .icon {
+            height: 1.4286rem;
+            width: 1.4286rem;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            margin-right: calc(1.1429rem * 0.75);
+            flex-grow: 0;
+            flex-shrink: 0;
+            color: #333;
+          }
+          .icon > :global(svg) {
+            width: 100%;
+            height: 100%;
+          }
+          .title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.2857rem;
+            line-height: 1.4286rem;
+            margin-right: 1.1429rem;
+            color: #333;
+          }
+          .content {
+            line-height: 1.2857rem;
+            font-size: 1rem;
+            color: #999;
+            margin-top: calc(1.1429rem * 0.75);
+          }
+        </style></div><style>
+        .notification-container {
+          position: fixed;
+          min-height: 0.7143rem;
+          top: calc(1.1429rem * 1.25);
+          left: 0;
+          right: 0;
+          z-index: 2000;
+          box-sizing: border-box;
+          overflow: visible;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 0;
+          visibility: visible;
+        }
+      </style></div>"
+`;

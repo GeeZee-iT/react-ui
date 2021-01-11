@@ -14,12 +14,14 @@ export interface Props extends Omit<React.InputHTMLAttributes<HTMLInputElement>,
   icon?: React.ReactNode
   iconRight?: React.ReactNode
   iconClickable?: boolean
+  iconRightClickable?: boolean
   htmlWidth?: React.InputHTMLAttributes<HTMLInputElement>['width']
   width?: string
   className?: string
   clearable?: boolean
   onClearClick?: React.EventHandler<React.MouseEvent<HTMLDivElement>>
   onIconClick?: (e: React.MouseEvent<HTMLDivElement>) => void
+  onIconRightClick?: (e: React.MouseEvent<HTMLDivElement>) => void
 }
 
 export const defaultProps = {
@@ -28,6 +30,7 @@ export const defaultProps = {
   readOnly: false,
   clearable: false,
   iconClickable: false,
+  iconRightClickable: false,
   width: 'initial',
   size: 'medium' as NormalSizes,
   color: 'default' as InputColors,

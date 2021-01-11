@@ -56,7 +56,7 @@ type NativeAttrs = Omit<React.HTMLAttributes<any>, keyof Props>
 export type SelectProps = React.PropsWithChildren<Props & NativeAttrs>
 type SelectPropsWithDefault = SelectProps & typeof defaultProps
 
-const Select = forwardRef<SelectHandles, React.PropsWithChildren<SelectProps>>(
+const Select = forwardRef<SelectHandles, SelectProps>(
   (
     {
       children,
@@ -165,7 +165,7 @@ const Select = forwardRef<SelectHandles, React.PropsWithChildren<SelectProps>>(
     return (
       <SelectContext.Provider value={initialValue}>
         <div
-          className={`select ${multiple ? 'multiple' : ''} ${className}`}
+          className={`select ${multiple ? 'multiple' : ''} ${variant || 'line'} ${className}`}
           ref={domRef}
           onClick={clickHandler}
           {...props}>

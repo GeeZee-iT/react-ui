@@ -6,11 +6,11 @@ import { getPageCount } from './utils'
 import { usePaginationContext } from './pagination-context'
 interface Props {
   pageSizeOptions: string[]
+  pageSize: number
   size?: NormalSizes
   total?: number
   labelPageSizeBefore?: ReactNode | string
   labelPageSizeAfter?: ReactNode | string
-  onPageSizeChange?: (current: number, pageSize: number) => void
 }
 
 const defaultProps = {
@@ -22,33 +22,44 @@ type NativeAttrs = Omit<React.HTMLAttributes<any>, keyof Props>
 export type PaginationPageSizeProps = React.PropsWithChildren<Props & NativeAttrs>
 const PaginationNext: React.FC<PaginationPageSizeProps> = ({
   pageSizeOptions,
+  pageSize,
   size,
   total,
   labelPageSizeBefore,
   labelPageSizeAfter,
-  onPageSizeChange,
 }: PaginationPageSizeProps & typeof defaultProps) => {
   const theme = useTheme()
-  const placeHolderVal = pageSizeOptions[0]
-  const { updatePage, updatePageSize, page } = usePaginationContext()
+  const { updatePage, updatePageSize, page, simple } = usePaginationContext()
   const changeHandler = (val: string) => {
     const pageSize = Number(val)
     const newPageCount = getPageCount(total, pageSize)
     const newCurrent = page && page > newPageCount ? newPageCount : page
     updatePageSize && updatePageSize(pageSize)
     updatePage && updatePage('click', newCurrent)
-    onPageSizeChange && onPageSizeChange(newCurrent as number, pageSize)
   }
+
+  const getPageSizeOptions = () => {
+    if (pageSizeOptions.some(option => option.toString() === pageSize.toString())) {
+      return pageSizeOptions
+    }
+    return pageSizeOptions.concat([pageSize.toString()]).sort((a, b) => {
+      const numberA = isNaN(Number(a)) ? 0 : Number(a)
+      const numberB = isNaN(Number(b)) ? 0 : Number(b)
+      return numberA - numberB
+    })
+  }
+  const mergedOptions = getPageSizeOptions()
+
   return (
     <div className="pagination-pagesize">
-      <div className="text before">{labelPageSizeBefore}</div>
+      {!simple && <div className="text before">{labelPageSizeBefore}</div>}
       <Select
         variant="line"
         size={size}
+        disableMatchWidth
         onChange={changeHandler}
-        placeholder={placeHolderVal}
-        defaultValue={placeHolderVal}>
-        {pageSizeOptions?.map(pageSize => {
+        defaultValue={pageSize.toString()}>
+        {mergedOptions?.map(pageSize => {
           return (
             <Select.Option value={pageSize} key={pageSize}>
               {pageSize}{' '}
@@ -56,7 +67,7 @@ const PaginationNext: React.FC<PaginationPageSizeProps> = ({
           )
         })}
       </Select>
-      <div className="text after">{labelPageSizeAfter}</div>
+      {!simple && <div className="text after">{labelPageSizeAfter}</div>}
       <style jsx>
         {`
           .pagination-pagesize {

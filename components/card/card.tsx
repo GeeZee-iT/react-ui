@@ -56,7 +56,7 @@ const Card: React.FC<React.PropsWithChildren<CardProps>> = ({
   const hasContent = hasChild(withoutImageChildren, CardContent)
 
   return (
-    <div className={`card ${className}`} {...props}>
+    <div className={`card ${className} ${variant || 'solid'}`} {...props}>
       {imageChildren}
       {hasContent ? withoutImageChildren : <CardContent>{withoutImageChildren}</CardContent>}
       {footerChildren}
@@ -79,15 +79,6 @@ const Card: React.FC<React.PropsWithChildren<CardProps>> = ({
           box-shadow: ${hoverShadow};
           background-color: ${hoverBgColor};
           border: ${theme.expressiveness.L2} ${theme.expressiveness.cLineStyle1} ${hoverBorderColor};
-        }
-
-        .card :global(img) {
-          width: 100%;
-        }
-
-        .card :global(.image) {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
         }
       `}</style>
     </div>

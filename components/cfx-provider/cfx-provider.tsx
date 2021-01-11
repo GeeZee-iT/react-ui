@@ -4,6 +4,7 @@ import {
   CfxUIContextParams,
   UpdateToastsFunction,
   UpdateMessagesFunction,
+  UpdateNotificationsFunction,
 } from '../utils/use-cfx-ui-context'
 import ThemeProvider from '../styles/theme-provider'
 import { ThemeParam } from '../styles/theme-provider/theme-provider'
@@ -11,6 +12,8 @@ import useCurrentState from '../utils/use-current-state'
 import ToastContainer, { ToastWithID } from '../use-toasts/toast-container'
 import MessageContainer from '../use-messages/message-container'
 import { MessageItemProps } from '../use-messages/message-item'
+import NotificationContainer from '../use-notifications/notification-container'
+import { NotificationItemProps } from '../use-notifications/notification-item'
 
 export interface Props {
   theme?: ThemeParam
@@ -38,16 +41,28 @@ const CfxProvider: React.FC<PropsWithChildren<Props>> = ({ theme, children }) =>
     setMessages(nextMessages)
   }
 
+  const [notifications, setNotifications, notificationsRef] = useCurrentState<
+    Array<NotificationItemProps>
+  >([])
+  const updateNotifications: UpdateNotificationsFunction<NotificationItemProps> = (
+    fn: (notifications: NotificationItemProps[]) => NotificationItemProps[],
+  ) => {
+    const nextNotifications = fn(notificationsRef.current)
+    setNotifications(nextNotifications)
+  }
+
   const initialValue = useMemo<CfxUIContextParams>(
     () => ({
       messages,
       updateMessages,
+      notifications,
+      updateNotifications,
       toasts,
       toastHovering,
       updateToasts,
       updateToastHoverStatus,
     }),
-    [toasts, toastHovering, messages],
+    [toasts, toastHovering, messages, notifications],
   )
 
   return (
@@ -56,6 +71,7 @@ const CfxProvider: React.FC<PropsWithChildren<Props>> = ({ theme, children }) =>
         {children}
         <ToastContainer />
         <MessageContainer />
+        <NotificationContainer />
       </ThemeProvider>
     </CfxUIContent.Provider>
   )
