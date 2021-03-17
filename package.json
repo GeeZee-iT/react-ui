@@ -1,19 +1,19 @@
 {
-  "name": "@cfxjs/react-ui",
-  "version": "0.0.0",
+  "name": "@geezee/react-ui",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "types": "dist/index.d.ts",
   "unpkg": "dist/index.min.js",
   "license": "MIT",
   "description": "Modern and minimalist React UI library.",
-  "homepage": "https://conflux-react-ui.vercel.app",
+  "homepage": "https://geezee-it.de",
   "bugs": {
-    "url": "https://github.com/Conflux-Chain/react-ui/issues/new/choose"
+    "url": "https://github.com/GeeZee-iT/react-ui/issues/new/choose"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Conflux-Chain/react-ui"
+    "url": "https://github.com/GeeZee-iT/react-ui"
   },
   "prettier": "@zeit-ui/prettier-config",
   "keywords": [
