@@ -45,12 +45,6 @@
     "release": "yarn build && yarn publish --access public --non-interactive",
     "commit": "git commit -a"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-    }
-  },
   "lint-staged": {
     "*.{js,ts,tsx,json,md}": [
       "prettier --write"
