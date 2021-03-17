@@ -1,6 +1,6 @@
 import RcTable from '@cfxjs/rc-table'
 import React from 'react'
-import css from 'styled-jsx/css'
+import { css } from 'styled-jsx/css'
 import useTheme from '../styles/use-theme'
 import { InputVariantTypes } from '../utils/prop-types'
 import ExpandIcon from './ExpandIcon'
