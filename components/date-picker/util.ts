@@ -1,4 +1,5 @@
 import { PickerMode } from '@jnoodle/rc-picker/lib/interface'
+import deDE from '@jnoodle/rc-picker/lib/locale/de_DE'
 import enUS from '@jnoodle/rc-picker/lib/locale/en_US'
 import zhCN from '@jnoodle/rc-picker/lib/locale/zh_CN'
 
@@ -15,6 +16,19 @@ const langPlaceholder = {
     rangeWeekPlaceholder: ['Start week', 'End week'],
     timePlaceholder: 'Select time',
     timeRangePlaceholder: ['Start time', 'End time'],
+  },
+  'de-DE': {
+    placeholder: 'Datum wählen',
+    yearPlaceholder: 'Jahr wählen',
+    quarterPlaceholder: 'Quartal wählen',
+    monthPlaceholder: 'Monat wählen',
+    weekPlaceholder: 'Woche wählen',
+    rangePlaceholder: ['Startdatum', 'Enddatum'],
+    rangeYearPlaceholder: ['Startjahr', 'Endjahr'],
+    rangeMonthPlaceholder: ['Startmonat', 'Endmonat'],
+    rangeWeekPlaceholder: ['Startwoche', 'Endwoche'],
+    timePlaceholder: 'Zeit wählen',
+    timeRangePlaceholder: ['Startzeit', 'Endzeit'],
   },
   'zh-CN': {
     placeholder: '请选择日期',
@@ -44,6 +58,8 @@ export const normalizeLocaleString = (locale: string) => {
     case '中文':
     case '中文简体':
       return 'zh-CN'
+    case 'de-DE':
+      return 'de-DE'
     default:
       return 'en-US'
   }
@@ -54,6 +70,8 @@ export const getLocale = (locale: string) => {
   switch (normalizeLocaleString(locale)) {
     case 'zh-CN':
       return zhCN
+    case 'de-DE':
+      return deDE
     // TODO add more locale
     default:
       return enUS
