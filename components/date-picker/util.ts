@@ -3,6 +3,8 @@ import deDE from '@jnoodle/rc-picker/lib/locale/de_DE'
 import enUS from '@jnoodle/rc-picker/lib/locale/en_US'
 import zhCN from '@jnoodle/rc-picker/lib/locale/zh_CN'
 
+require('dayjs/locale/de')
+
 const langPlaceholder = {
   'en-US': {
     placeholder: 'Select date',
