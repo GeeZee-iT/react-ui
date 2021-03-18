@@ -123,6 +123,9 @@ export function getRangePlaceholder(
     case 'zh':
       lang = langPlaceholder['zh-CN']
       break
+    case 'de-DE':
+      lang = langPlaceholder['de-DE']
+      break
   }
 
   switch (picker) {
