@@ -3,8 +3,8 @@ import { useImperativeHandle, useRef } from 'react'
 import { generatePickerGlobalStyle } from '../style'
 import useTheme from '../../styles/use-theme'
 import { PickerProps, RangePickerProps } from './index'
-import { SharedTimeProps } from '@jnoodle/rc-picker/lib/panels/TimePanel'
-import { DisabledTime } from '@jnoodle/rc-picker/lib/interface'
+import { SharedTimeProps } from '@geezee/rc-picker/lib/panels/TimePanel'
+import { DisabledTime } from '@geezee/rc-picker/lib/interface'
 
 // fix props ts error
 export type CombineProps<DateType> = Omit<

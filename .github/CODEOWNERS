@@ -14,8 +14,8 @@ components/tag/* @yqrashawn
 components/tabs/* @GuichiZhao
 components/table/* @yqrashawn
 components/pagination/* @zctocm
-components/link/* @jnoodle
-components/date-picker/* @jnoodle
+components/link/* @geezee
+components/date-picker/* @geezee
 components/message/* @chain-txz
 components/button-group/* @chain-txz
 components/skeleton/* @chain-txz
@@ -35,8 +35,8 @@ pages/*/components/tag.mdx @yqrashawn
 pages/*/components/tabs.mdx @GuichiZhao
 pages/*/components/table.mdx @yqrashawn
 pages/*/components/pagination.mdx @zctocm
-pages/*/components/link.mdx @jnoodle
-pages/*/components/date-picker.mdx @jnoodle
+pages/*/components/link.mdx @geezee
+pages/*/components/date-picker.mdx @geezee
 pages/*/components/message.mdx @chain-txz
 pages/*/components/button-group.mdx @chain-txz
 pages/*/components/skeleton.mdx @chain-txz

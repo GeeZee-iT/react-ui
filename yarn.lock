@@ -1108,6 +1108,20 @@
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-9.0.1.tgz#df281f0f3d8f3adb10c95e4dd72b16acf41b5400"
   integrity sha512-wo2rHprtDzTHf4tiSxavktJ52ntiwmg7eHNGFLH38G1of8OfGVwOc1sVbpM4jN/HK/rCMhYOi6xzoPqsv0537A==
 
+"@geezee/rc-picker@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@geezee/rc-picker/-/rc-picker-0.0.1.tgz#db8f24c0a647d0dd3238690dd814d4949301365e"
+  integrity sha512-777JEjex7Pzog13opOe9sIeg+8WY+Nj/xYszMQl2EiA84B+eKYdXdy0omhTIDg+EPdZt1570pyDWp2LQ2Nu6Yg==
+  dependencies:
+    "@babel/runtime" "^7.10.1"
+    classnames "^2.2.1"
+    date-fns "^2.15.0"
+    dayjs "1.8.30"
+    moment "^2.24.0"
+    rc-trigger "^4.0.0"
+    rc-util "^5.0.1"
+    shallowequal "^1.1.0"
+
 "@iarna/cli@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@iarna/cli/-/cli-1.2.0.tgz#0f7af5e851afe895104583c4ca07377a8094d641"
@@ -1305,20 +1319,6 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
-
-"@jnoodle/rc-picker@^2.0.10":
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/@jnoodle/rc-picker/-/rc-picker-2.0.10.tgz#57082f1e87b7f272cb0d370faf40c4af44a823a9"
-  integrity sha512-iAVRu9+GKykCJwvr9PqZt1s+d9HChzeH++FerhSJX1Uv5zUmgcKqEzo7SINO9rLIwyM6wCsLBgi4pE18AC7CDA==
-  dependencies:
-    "@babel/runtime" "^7.10.1"
-    classnames "^2.2.1"
-    date-fns "^2.15.0"
-    dayjs "1.8.30"
-    moment "^2.24.0"
-    rc-trigger "^4.0.0"
-    rc-util "^5.0.1"
-    shallowequal "^1.1.0"
 
 "@mapbox/rehype-prism@^0.4.0":
   version "0.4.0"

@@ -1,7 +1,7 @@
-import { useRef } from 'react'
+import { RangeValue } from '@geezee/rc-picker/lib/interface'
+import { PickerRefConfig } from '@geezee/rc-picker/lib/Picker'
 import { Dayjs } from 'dayjs'
-import { PickerRefConfig } from '@jnoodle/rc-picker/lib/Picker'
-import { RangeValue } from '@jnoodle/rc-picker/lib/interface'
+import { useRef } from 'react'
 
 export default () => {
   const ref = useRef<PickerRefConfig<Dayjs>>(null)

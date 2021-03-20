@@ -1,17 +1,17 @@
 import * as React from 'react'
-import { GenerateConfig } from '@jnoodle/rc-picker/lib/generate'
+import { GenerateConfig } from '@geezee/rc-picker/lib/generate'
 import {
   PickerBaseProps as RCPickerBaseProps,
   PickerDateProps as RCPickerDateProps,
   PickerTimeProps as RCPickerTimeProps,
-} from '@jnoodle/rc-picker/lib/Picker'
-import { SharedTimeProps } from '@jnoodle/rc-picker/lib/panels/TimePanel'
+} from '@geezee/rc-picker/lib/Picker'
+import { SharedTimeProps } from '@geezee/rc-picker/lib/panels/TimePanel'
 import {
   RangePickerBaseProps as RCRangePickerBaseProps,
   RangePickerDateProps as RCRangePickerDateProps,
   RangePickerTimeProps as RCRangePickerTimeProps,
-} from '@jnoodle/rc-picker/lib/RangePicker'
-import { PickerMode } from '@jnoodle/rc-picker/lib/interface'
+} from '@geezee/rc-picker/lib/RangePicker'
+import { PickerMode } from '@geezee/rc-picker/lib/interface'
 import PickerButton from '../picker-button'
 import PickerTag from '../picker-tag'
 import generateSinglePicker from './generate-single-picker'
