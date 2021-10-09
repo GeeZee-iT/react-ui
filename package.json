@@ -106,7 +106,7 @@
   },
   "dependencies": {
     "@cfxjs/rc-table": "^1.0.0",
-    "@geezee/rc-picker": "^0.0.1",
+    "@geezee/rc-picker": "^0.2.0",
     "@popperjs/core": "^2.5.3",
     "@zeit-ui/react-icons": "^1.3.0",
     "dayjs": "1.8.30",
