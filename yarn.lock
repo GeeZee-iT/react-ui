@@ -1108,10 +1108,10 @@
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-9.0.1.tgz#df281f0f3d8f3adb10c95e4dd72b16acf41b5400"
   integrity sha512-wo2rHprtDzTHf4tiSxavktJ52ntiwmg7eHNGFLH38G1of8OfGVwOc1sVbpM4jN/HK/rCMhYOi6xzoPqsv0537A==
 
-"@geezee/rc-picker@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@geezee/rc-picker/-/rc-picker-0.2.0.tgz#94f6d708b2e87f917b856bb630f4d8f5fecd5bfc"
-  integrity sha512-rgpUA2JOs+PmHaLLbDmvupGC1GiMdpZDHJr4/uRqyINw/bJmzAgBNY7UBfccp+d+GCfSygfVbMzx/ZBIK9Z6lg==
+"@geezee/rc-picker@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@geezee/rc-picker/-/rc-picker-0.3.0.tgz#17f4fa6a18aa299e0c7ddf58c21031a5cdcf7d7f"
+  integrity sha512-mOvC+BsMyBaO+in9dPwCiGg+1nvMuYdNNmwYTTKcMzBbfnpmH26TQWxdkwJOC61FPu/FSYdIG1RVqwEb2aUYVQ==
   dependencies:
     "@babel/runtime" "^7.10.1"
     classnames "^2.2.1"
